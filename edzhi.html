@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EDZHICRM – All-in-One CRM for Growing Businesses</title>
+
+  <!-- Poppins (weights 400–800) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5.3 + Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Shared project stylesheet (:root variables + base + edzhome- styles) -->
+  <link href="./edzhi.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navbar start -->
+<header class="edzhome-header fixed-top" data-edzhome-header>
+  <nav class="navbar navbar-expand-lg edzhome-navbar" aria-label="Main navigation">
+    <div class="container">
+
+      <!-- Brand: logo sits in a fixed wrapper so any backend logo keeps the layout -->
+      <a class="navbar-brand edzhome-navbar__brand" href="/" aria-label="EDZHICRM home">
+        <span class="edzhome-navbar__logo"><img src="img.png" alt="EDZHICRM"></span>
+      </a>
+
+      <!-- Mobile toggler (icon swaps via aria-expanded, no JS) -->
+      <button class="navbar-toggler edzhome-navbar__toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#edzhomeNav"
+              aria-controls="edzhomeNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="bi bi-list edzhome-navbar__icon-open" aria-hidden="true"></i>
+        <i class="bi bi-x-lg edzhome-navbar__icon-close" aria-hidden="true"></i>
+      </button>
+
+      <div class="collapse navbar-collapse edzhome-navbar__collapse" id="edzhomeNav">
+        <!-- Center navigation -->
+        <ul class="navbar-nav edzhome-navbar__menu">
+          <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+          <li class="nav-item"><a class="nav-link" href="#industries">Industries</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pricing">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link" href="#compare">Compare</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        </ul>
+        <!-- Right actions -->
+        <div class="edzhome-navbar__actions">
+          <a class="edzhome-navbar__login" href="#login">Log In</a>
+          <a class="btn edzhome-btn edzhome-btn--dark" href="#trial">
+            <i class="bi bi-rocket-takeoff-fill" aria-hidden="true"></i> Free Trial
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </nav>
+</header>
+<!-- Navbar end -->
+
+<main>
+<!-- Hero start -->
+<section class="edzhome-hero" aria-labelledby="edzhomeHeroTitle">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+
+      <!-- Hero content start -->
+      <div class="col-lg-6">
+        <h1 class="edzhome-hero__title" id="edzhomeHeroTitle">
+          <span class="edzhome-hero__line">All-in-One CRM</span>
+          <span class="edzhome-hero__line edzhome-hero__accent">for Growing</span>
+          <span class="edzhome-hero__line edzhome-hero__accent">Businesses.</span>
+        </h1>
+        <p class="edzhome-hero__text">
+          Stop juggling five apps. <strong>EDZHICRM</strong> unifies lead management, invoicing, GPS field tracking, helpdesk, and AI automation — so you can focus on what actually grows your business.
+        </p>
+        <a class="btn edzhome-btn edzhome-btn--primary" href="#trial">
+          <i class="bi bi-rocket-takeoff-fill" aria-hidden="true"></i> Start Free Trial
+        </a>
+
+        <!-- Social proof start -->
+        <div class="edzhome-proof">
+          <div class="edzhome-proof__avatars" aria-hidden="true">
+            <span class="edzhome-proof__avatar edzhome-proof__avatar--1">RK</span>
+            <span class="edzhome-proof__avatar edzhome-proof__avatar--2">PS</span>
+            <span class="edzhome-proof__avatar edzhome-proof__avatar--3">AM</span>
+            <span class="edzhome-proof__avatar edzhome-proof__avatar--4">VR</span>
+          </div>
+          <div>
+            <div class="edzhome-proof__stars" role="img" aria-label="Rated 4.9 out of 5 stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p class="edzhome-proof__text"><strong>4.9/5</strong> from 12,450+ happy businesses</p>
+          </div>
+        </div>
+        <!-- Social proof end -->
+      </div>
+      <!-- Hero content end -->
+
+      <!-- Product demo start -->
+      <div class="col-lg-6">
+        <div class="edzhome-demo" role="group" aria-label="EDZHICRM product demo">
+
+          <div class="edzhome-demo__frame">
+            <!-- Browser-style header -->
+            <div class="edzhome-demo__bar">
+              <span class="edzhome-demo__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="edzhome-demo__title">EDZHICRM Dashboard</span>
+              <span class="edzhome-demo__live"><i aria-hidden="true"></i>Live</span>
+            </div>
+
+            <!-- Media wrapper: fixed aspect ratio, so any backend image/video fits with no layout shift -->
+            <div class="ratio edzhome-demo__media">
+              <div class="edzhome-demo__stage" data-edzhome-stage>
+
+                <!-- ACTIVE NOW: image. When the video is ready, DELETE this <img> and UNCOMMENT the block below -->
+                <!-- <img class="edzhome-demo__img" src="img.png" alt="EDZHICRM dashboard showing leads, revenue, tickets and invoices" loading="eager"> -->
+
+                <!-- VIDEO (uncomment when ready). Replace the src with the backend video URL. -->
+                <video class="edzhome-demo__video" autoplay muted loop playsinline preload="metadata"
+                       poster="img.png" disablepictureinpicture controlslist="nodownload"
+                       aria-label="EDZHICRM product demo video. Click to view full screen">
+                  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+                </video>
+                <button class="edzhome-demo__expand" type="button" aria-label="View demo video full screen">
+                  <i class="bi bi-arrows-fullscreen" aria-hidden="true"></i>
+                </button>
+                <div class="edzhome-demo__fallback" role="status">
+                  <span class="edzhome-demo__play"><i class="bi bi-play-fill" aria-hidden="true"></i></span>
+                  <strong>Capture and convert every enquiry</strong>
+                  <span>Video coming soon — book a live demo to see it now.</span>
+                  <span class="edzhome-demo__duration">1:30</span>
+                </div>
+               
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating notifications (desktop only, sit mostly outside the frame) -->
+          <div class="edzhome-note edzhome-note--lead" aria-hidden="true">
+            <span class="edzhome-note__icon"><i class="bi bi-person-plus-fill"></i></span>
+            <span><strong>New Lead Added</strong><small>Just now</small></span>
+          </div>
+          <div class="edzhome-note edzhome-note--ticket" aria-hidden="true">
+            <span class="edzhome-note__icon"><i class="bi bi-headset"></i></span>
+            <span><strong>Ticket Resolved</strong><small>In under 2 hrs</small></span>
+          </div>
+          <div class="edzhome-note edzhome-note--invoice" aria-hidden="true">
+            <span class="edzhome-note__icon"><i class="bi bi-receipt"></i></span>
+            <span><strong>Invoice Paid</strong><small>₹68K received</small></span>
+          </div>
+
+        </div>
+      </div>
+      <!-- Product demo end -->
+
+    </div>
+  </div>
+</section>
+<!-- Hero end -->
+ <!-- Trusted brands start (paste right after the Hero </section>, inside <main>) -->
+<section class="edzhome-trust" aria-labelledby="edzhomeTrustTitle">
+
+  <!-- Heading -->
+  <h2 class="edzhome-trust__title" id="edzhomeTrustTitle">Trusted by 12,450+ businesses across India</h2>
+
+  <!-- Marquee: overflow hidden + edge fade. Track holds 2 identical groups → seamless loop -->
+  <div class="edzhome-marquee">
+    <div class="edzhome-marquee__track">
+
+      <!-- Group 1 (real content) -->
+      <ul class="edzhome-marquee__group list-unstyled mb-0">
+        <li class="edzhome-brand"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i><span>GreenForce Energy</span></li>
+        <li class="edzhome-brand"><i class="bi bi-building-fill" aria-hidden="true"></i><span>NovaBuild Co.</span></li>
+        <li class="edzhome-brand"><i class="bi bi-airplane-fill" aria-hidden="true"></i><span>TravelBridge</span></li>
+        <li class="edzhome-brand"><i class="bi bi-mortarboard-fill" aria-hidden="true"></i><span>EduReach India</span></li>
+        <li class="edzhome-brand"><i class="bi bi-shield-fill-check" aria-hidden="true"></i><span>InsureNow</span></li>
+        <li class="edzhome-brand"><i class="bi bi-houses-fill" aria-hidden="true"></i><span>PropSpace Realty</span></li>
+        <li class="edzhome-brand"><i class="bi bi-rocket-takeoff-fill" aria-hidden="true"></i><span>LaunchPath SaaS</span></li>
+      </ul>
+
+      <!-- Group 2 (exact duplicate, hidden from screen readers) -->
+      <ul class="edzhome-marquee__group list-unstyled mb-0" aria-hidden="true">
+        <li class="edzhome-brand"><i class="bi bi-lightning-charge-fill"></i><span>GreenForce Energy</span></li>
+        <li class="edzhome-brand"><i class="bi bi-building-fill"></i><span>NovaBuild Co.</span></li>
+        <li class="edzhome-brand"><i class="bi bi-airplane-fill"></i><span>TravelBridge</span></li>
+        <li class="edzhome-brand"><i class="bi bi-mortarboard-fill"></i><span>EduReach India</span></li>
+        <li class="edzhome-brand"><i class="bi bi-shield-fill-check"></i><span>InsureNow</span></li>
+        <li class="edzhome-brand"><i class="bi bi-houses-fill"></i><span>PropSpace Realty</span></li>
+        <li class="edzhome-brand"><i class="bi bi-rocket-takeoff-fill"></i><span>LaunchPath SaaS</span></li>
+      </ul>
+
+    </div>
+  </div>
+</section>
+<!-- Trusted brands end -->
+
+<!-- Journey start (paste after Trusted brands, inside <main>) -->
+<section class="edzhome-section edzhome-journey" aria-labelledby="edzhomeJourneyTitle">
+  <div class="container">
+    <span class="edzhome-eyebrow">The complete journey</span>
+    <h2 class="edzhome-title" id="edzhomeJourneyTitle">One journey, from enquiry to certificate</h2>
+
+    <!-- Timeline: horizontal from 576px up, vertical below -->
+    <ol class="edzhome-steps">
+      <li class="edzhome-step"><span class="edzhome-step__dot">1</span><span class="edzhome-step__label">Lead</span></li>
+      <li class="edzhome-step"><span class="edzhome-step__dot">2</span><span class="edzhome-step__label">Sales</span></li>
+      <li class="edzhome-step"><span class="edzhome-step__dot">3</span><span class="edzhome-step__label">Counselor</span></li>
+      <li class="edzhome-step"><span class="edzhome-step__dot">4</span><span class="edzhome-step__label">Enrollment</span></li>
+      <li class="edzhome-step"><span class="edzhome-step__dot">5</span><span class="edzhome-step__label">Learning</span></li>
+      <li class="edzhome-step"><span class="edzhome-step__dot">6</span><span class="edzhome-step__label">Attendance</span></li>
+      <li class="edzhome-step"><span class="edzhome-step__dot">7</span><span class="edzhome-step__label">Records</span></li>
+      <li class="edzhome-step"><span class="edzhome-step__dot edzhome-step__dot--cert"><i class="bi bi-patch-check" aria-hidden="true"></i></span><span class="edzhome-step__label">Certificate</span></li>
+    </ol>
+
+    <!-- Info cards: h-100 keeps all three the same height -->
+    <div class="row g-3 g-lg-4">
+      <div class="col-lg-4">
+        <article class="card h-100 edzhome-jcard"><div class="card-body">
+          <h3 class="edzhome-jcard__title">Trainer panel</h3>
+          <p class="edzhome-jcard__text">Online and offline sessions with attendance punching.</p>
+        </div></article>
+      </div>
+      <div class="col-lg-4">
+        <article class="card h-100 edzhome-jcard"><div class="card-body">
+          <h3 class="edzhome-jcard__title">Trainer billing</h3>
+          <p class="edzhome-jcard__text">Hourly or monthly, from approved sessions.</p>
+        </div></article>
+      </div>
+      <div class="col-lg-4">
+        <article class="card h-100 edzhome-jcard"><div class="card-body">
+          <h3 class="edzhome-jcard__title">Notifications</h3>
+          <p class="edzhome-jcard__text">Updates, fee reminders and broadcasts at every stage.</p>
+        </div></article>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Journey end -->
+
+<!-- Funnel start -->
+<section class="edzhome-section edzhome-funnel-sec" aria-labelledby="edzhomeFunnelTitle">
+  <div class="container">
+    <span class="edzhome-eyebrow">The funnel</span>
+    <h2 class="edzhome-title" id="edzhomeFunnelTitle">Every enquiry has a path to a certificate</h2>
+
+    <!-- Each row = bar (left) + description (right), so they always align -->
+    <ol class="edzhome-funnel">
+      <li class="row align-items-center gx-4 gy-2">
+        <div class="col-md-6"><span class="edzhome-funnel__bar edzhome-funnel__bar--1">Enquiries</span></div>
+        <p class="col-md-6 edzhome-funnel__desc">Captured from every source, in one place</p>
+      </li>
+      <li class="row align-items-center gx-4 gy-2">
+        <div class="col-md-6"><span class="edzhome-funnel__bar edzhome-funnel__bar--2">Sales</span></div>
+        <p class="col-md-6 edzhome-funnel__desc">Pipeline stages, tasks and follow-ups</p>
+      </li>
+      <li class="row align-items-center gx-4 gy-2">
+        <div class="col-md-6"><span class="edzhome-funnel__bar edzhome-funnel__bar--3">Counseling</span></div>
+        <p class="col-md-6 edzhome-funnel__desc">Counselors guide and convert</p>
+      </li>
+      <li class="row align-items-center gx-4 gy-2">
+        <div class="col-md-6"><span class="edzhome-funnel__bar edzhome-funnel__bar--4">Enrolled</span></div>
+        <p class="col-md-6 edzhome-funnel__desc">Batches, courses and fee plan assigned</p>
+      </li>
+      <li class="row align-items-center gx-4 gy-2">
+        <div class="col-md-6"><span class="edzhome-funnel__bar edzhome-funnel__bar--5">Learning</span></div>
+        <p class="col-md-6 edzhome-funnel__desc">Modules, material, online and offline sessions</p>
+      </li>
+      <li class="row align-items-center gx-4 gy-2">
+        <div class="col-md-6"><span class="edzhome-funnel__bar edzhome-funnel__bar--6">Completed</span></div>
+        <p class="col-md-6 edzhome-funnel__desc">Attendance and performance meet the rules</p>
+      </li>
+      <li class="row align-items-center gx-4 gy-2">
+        <div class="col-md-6"><span class="edzhome-funnel__bar edzhome-funnel__bar--7">Certified</span></div>
+        <p class="col-md-6 edzhome-funnel__desc">Verified certificate with a QR code</p>
+      </li>
+    </ol>
+  </div>
+</section>
+<!-- Funnel end -->
+
+<!-- Pipeline start -->
+<section class="edzhome-section edzhome-pipe-sec" aria-labelledby="edzhomePipeTitle">
+  <div class="container">
+    <span class="edzhome-eyebrow">Leads and sales</span>
+    <h2 class="edzhome-title" id="edzhomePipeTitle">Every enquiry in one pipeline</h2>
+
+    <!-- 2 columns on phones, 4 from 768px. Add more columns/items freely -->
+    <div class="row row-cols-2 row-cols-md-4 g-3">
+      <div class="col">
+        <h3 class="edzhome-pipe__head">New enquiry</h3>
+        <ul class="edzhome-pipe__list"><li class="edzhome-pipe__item">Website form</li><li class="edzhome-pipe__item">Social media</li></ul>
+      </div>
+      <div class="col">
+        <h3 class="edzhome-pipe__head">Follow-up</h3>
+        <ul class="edzhome-pipe__list"><li class="edzhome-pipe__item">Call scheduled</li><li class="edzhome-pipe__item">Demo booked</li></ul>
+      </div>
+      <div class="col">
+        <h3 class="edzhome-pipe__head">Counseling</h3>
+        <ul class="edzhome-pipe__list"><li class="edzhome-pipe__item">Course guidance</li><li class="edzhome-pipe__item">Fee discussion</li></ul>
+      </div>
+      <div class="col">
+        <h3 class="edzhome-pipe__head edzhome-pipe__head--done">Converted</h3>
+        <ul class="edzhome-pipe__list"><li class="edzhome-pipe__item">Student enrolled</li><li class="edzhome-pipe__item">Batch assigned</li></ul>
+      </div>
+    </div>
+
+    <!-- Bottom features -->
+    <div class="row g-4 mt-4 mt-lg-5">
+      <div class="col-12 col-md-4"><div class="edzhome-feature">
+        <h3 class="edzhome-feature__title">Capture</h3>
+        <p class="edzhome-feature__text">Website, social media, calls and walk-ins</p>
+      </div></div>
+      <div class="col-12 col-md-4"><div class="edzhome-feature">
+        <h3 class="edzhome-feature__title">Follow up</h3>
+        <p class="edzhome-feature__text">Tasks, reminders and notes on every lead</p>
+      </div></div>
+      <div class="col-12 col-md-4"><div class="edzhome-feature">
+        <h3 class="edzhome-feature__title">Convert</h3>
+        <p class="edzhome-feature__text">Turn a lead into an enrolled student in one step</p>
+      </div></div>
+    </div>
+  </div>
+</section>
+<!-- Pipeline end -->
+
+<!-- Product features start (paste after the Pipeline section, inside <main>) -->
+<!-- PHP NOTE: nav buttons and tab panes below are two loops over the same module list.
+     First module gets "active" (button) and "show active" (pane). Everything else is plain Bootstrap tabs. -->
+<section class="edzhome-section edzhome-feat" id="features" aria-labelledby="edzhomeFeatTitle">
+  <div class="container">
+
+    <!-- Header start -->
+    <header class="text-center edzhome-feat__head">
+      <span class="edzhome-badge"><i class="bi bi-grid-1x2-fill" aria-hidden="true"></i>Product features</span>
+      <h2 class="edzhome-feat__title" id="edzhomeFeatTitle">
+        Everything Your Business Needs,
+        <span class="edzhome-feat__title-accent">In One Place</span>
+      </h2>
+      <p class="edzhome-feat__sub">10 integrated modules — from the first lead to the final invoice. All connected, all smart.</p>
+    </header>
+    <!-- Header end -->
+
+    <div class="row g-4 align-items-start">
+
+      <!-- Navigation start: Bootstrap nav-pills. Vertical on lg+, swipeable row with arrows below -->
+      <div class="col-lg-4 col-xl-3">
+        <div class="edzhome-fnav-wrap" data-edzhome-fnav>
+          <button class="edzhome-fnav-btn" type="button" data-dir="-1" aria-label="Previous modules" disabled><i class="bi bi-chevron-left" aria-hidden="true"></i></button>
+          <div class="nav nav-pills edzhome-fnav" id="edzhomeFeatTabs" role="tablist" aria-label="Product modules">
+          <button class="nav-link edzhome-fitem active" id="edzhomeTab-lead-generation" data-bs-toggle="pill" data-bs-target="#edzhomePane-lead-generation" type="button" role="tab" aria-controls="edzhomePane-lead-generation" aria-selected="true">
+            <span class="edzhome-ficon edzhome-tint-1"><i class="bi bi-magnet" aria-hidden="true"></i></span>
+            <span class="edzhome-fitem__text"><strong>Lead Generation</strong><small>Turn visits into pipeline</small></span>
+            <i class="bi bi-chevron-right edzhome-fitem__chev" aria-hidden="true"></i>
+          </button>
+          <button class="nav-link edzhome-fitem" id="edzhomeTab-lead-distribution" data-bs-toggle="pill" data-bs-target="#edzhomePane-lead-distribution" type="button" role="tab" aria-controls="edzhomePane-lead-distribution" aria-selected="false">
+            <span class="edzhome-ficon edzhome-tint-2"><i class="bi bi-share" aria-hidden="true"></i></span>
+            <span class="edzhome-fitem__text"><strong>Lead Distribution</strong><small>Auto-route to agents</small></span>
+            <i class="bi bi-chevron-right edzhome-fitem__chev" aria-hidden="true"></i>
+          </button>
+          <button class="nav-link edzhome-fitem" id="edzhomeTab-crm-management" data-bs-toggle="pill" data-bs-target="#edzhomePane-crm-management" type="button" role="tab" aria-controls="edzhomePane-crm-management" aria-selected="false">
+            <span class="edzhome-ficon edzhome-tint-3"><i class="bi bi-people" aria-hidden="true"></i></span>
+            <span class="edzhome-fitem__text"><strong>CRM Management</strong><small>360° customer view</small></span>
+            <i class="bi bi-chevron-right edzhome-fitem__chev" aria-hidden="true"></i>
+          </button>
+          <button class="nav-link edzhome-fitem" id="edzhomeTab-marketing-automation" data-bs-toggle="pill" data-bs-target="#edzhomePane-marketing-automation" type="button" role="tab" aria-controls="edzhomePane-marketing-automation" aria-selected="false">
+            <span class="edzhome-ficon edzhome-tint-4"><i class="bi bi-magic" aria-hidden="true"></i></span>
+            <span class="edzhome-fitem__text"><strong>Marketing Automation</strong><small>Workflows that never forget</small></span>
+            <i class="bi bi-chevron-right edzhome-fitem__chev" aria-hidden="true"></i>
+          </button>
+          <button class="nav-link edzhome-fitem" id="edzhomeTab-deal-pipeline" data-bs-toggle="pill" data-bs-target="#edzhomePane-deal-pipeline" type="button" role="tab" aria-controls="edzhomePane-deal-pipeline" aria-selected="false">
+            <span class="edzhome-ficon edzhome-tint-2"><i class="bi bi-handshake" aria-hidden="true"></i></span>
+            <span class="edzhome-fitem__text"><strong>Deal Pipeline</strong><small>Visual sales funnel</small></span>
+            <i class="bi bi-chevron-right edzhome-fitem__chev" aria-hidden="true"></i>
+          </button>
+          <button class="nav-link edzhome-fitem" id="edzhomeTab-quotes-invoicing" data-bs-toggle="pill" data-bs-target="#edzhomePane-quotes-invoicing" type="button" role="tab" aria-controls="edzhomePane-quotes-invoicing" aria-selected="false">
+            <span class="edzhome-ficon edzhome-tint-5"><i class="bi bi-file-earmark-text" aria-hidden="true"></i></span>
+            <span class="edzhome-fitem__text"><strong>Quotes &amp; Invoicing</strong><small>Quote to cash, fast</small></span>
+            <i class="bi bi-chevron-right edzhome-fitem__chev" aria-hidden="true"></i>
+          </button>
+          <button class="nav-link edzhome-fitem" id="edzhomeTab-payments" data-bs-toggle="pill" data-bs-target="#edzhomePane-payments" type="button" role="tab" aria-controls="edzhomePane-payments" aria-selected="false">
+            <span class="edzhome-ficon edzhome-tint-1"><i class="bi bi-credit-card" aria-hidden="true"></i></span>
+            <span class="edzhome-fitem__text"><strong>Payments</strong><small>Collect safer, faster</small></span>
+            <i class="bi bi-chevron-right edzhome-fitem__chev" aria-hidden="true"></i>
+          </button>
+          <button class="nav-link edzhome-fitem" id="edzhomeTab-helpdesk-ticketing" data-bs-toggle="pill" data-bs-target="#edzhomePane-helpdesk-ticketing" type="button" role="tab" aria-controls="edzhomePane-helpdesk-ticketing" aria-selected="false">
+            <span class="edzhome-ficon edzhome-tint-6"><i class="bi bi-headset" aria-hidden="true"></i></span>
+            <span class="edzhome-fitem__text"><strong>Helpdesk &amp; Ticketing</strong><small>Support that scales</small></span>
+            <i class="bi bi-chevron-right edzhome-fitem__chev" aria-hidden="true"></i>
+          </button>
+          <button class="nav-link edzhome-fitem" id="edzhomeTab-field-force" data-bs-toggle="pill" data-bs-target="#edzhomePane-field-force" type="button" role="tab" aria-controls="edzhomePane-field-force" aria-selected="false">
+            <span class="edzhome-ficon edzhome-tint-2"><i class="bi bi-geo-alt" aria-hidden="true"></i></span>
+            <span class="edzhome-fitem__text"><strong>Field Force</strong><small>GPS &amp; remote teams</small></span>
+            <i class="bi bi-chevron-right edzhome-fitem__chev" aria-hidden="true"></i>
+          </button>
+          <button class="nav-link edzhome-fitem" id="edzhomeTab-ai-chatbots" data-bs-toggle="pill" data-bs-target="#edzhomePane-ai-chatbots" type="button" role="tab" aria-controls="edzhomePane-ai-chatbots" aria-selected="false">
+            <span class="edzhome-ficon edzhome-tint-6"><i class="bi bi-chat-dots" aria-hidden="true"></i></span>
+            <span class="edzhome-fitem__text"><strong>AI Chatbots</strong><small>24x7 conversations</small></span>
+            <i class="bi bi-chevron-right edzhome-fitem__chev" aria-hidden="true"></i>
+          </button>
+          </div>
+          <button class="edzhome-fnav-btn" type="button" data-dir="1" aria-label="Next modules"><i class="bi bi-chevron-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      <!-- Navigation end -->
+
+      <!-- Detail panels start -->
+      <div class="col-lg-8 col-xl-9">
+        <div class="edzhome-fpanel tab-content" id="edzhomeFeatPanes">
+        <!-- Pane 1: Lead Generation -->
+        <div class="tab-pane fade show active" id="edzhomePane-lead-generation" role="tabpanel" aria-labelledby="edzhomeTab-lead-generation" tabindex="0">
+          <div class="edzhome-fpanel__top">
+            <ul class="edzhome-tags list-unstyled"><li class="edzhome-tag">Capture</li><li class="edzhome-tag">Qualify</li><li class="edzhome-tag">Convert</li></ul>
+            <h3 class="edzhome-fpanel__title">Lead Generation</h3>
+            <p class="edzhome-fpanel__desc">Capture leads from any source or generate them on your website with dynamic forms, exit-intent popups, and multi-channel campaigns.</p>
+            <div class="edzhome-fpanel__actions">
+              <a class="btn edzhome-btn edzhome-btn--primary edzhome-btn--sm" href="#"><i class="bi bi-arrow-right" aria-hidden="true"></i><span>Explore Engage Tool</span></a>
+              <a class="btn edzhome-btn edzhome-btn--outline edzhome-btn--sm" href="#">Universal Forms</a>
+            </div>
+          </div>
+          <div class="edzhome-fpanel__cards">
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-1"><i class="bi bi-magic" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Smart Contact Forms</h4><p class="edzhome-fcard__text">Convert visitors with popups, deal bars, and exit-intent flows that capture intent.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-2"><i class="bi bi-broadcast" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Multi-Source Capture</h4><p class="edzhome-fcard__text">Pull leads from Facebook, Google Ads, Indiamart, Justdial, TradeIndia and more.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-3"><i class="bi bi-globe" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Universal Forms</h4><p class="edzhome-fcard__text">Consistent, fast, trackable lead forms for any channel or platform.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-4"><i class="bi bi-send" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">WhatsApp &amp; SMS Campaigns</h4><p class="edzhome-fcard__text">Boost inbound flow with targeted WhatsApp, email, or SMS blasts.</p></article></div>
+            </div>
+          </div>
+        </div>
+        <!-- Pane 2: Lead Distribution -->
+        <div class="tab-pane fade" id="edzhomePane-lead-distribution" role="tabpanel" aria-labelledby="edzhomeTab-lead-distribution" tabindex="0">
+          <div class="edzhome-fpanel__top">
+            <ul class="edzhome-tags list-unstyled"><li class="edzhome-tag">Route</li><li class="edzhome-tag">Balance</li><li class="edzhome-tag">Track</li></ul>
+            <h3 class="edzhome-fpanel__title">Lead Distribution</h3>
+            <p class="edzhome-fpanel__desc">Assign every new lead to the right agent automatically using rules, round-robin and workload balancing.</p>
+            <div class="edzhome-fpanel__actions">
+              <a class="btn edzhome-btn edzhome-btn--primary edzhome-btn--sm" href="#"><i class="bi bi-arrow-right" aria-hidden="true"></i><span>Explore Routing Rules</span></a>
+              <a class="btn edzhome-btn edzhome-btn--outline edzhome-btn--sm" href="#">Round Robin</a>
+            </div>
+          </div>
+          <div class="edzhome-fpanel__cards">
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-1"><i class="bi bi-signpost-split" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Rule-Based Routing</h4><p class="edzhome-fcard__text">Assign by source, city, course or budget with flexible conditions.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-2"><i class="bi bi-arrow-repeat" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Round-Robin Assignment</h4><p class="edzhome-fcard__text">Share leads fairly across your counselors and sales team.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-3"><i class="bi bi-sliders" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Workload Balancing</h4><p class="edzhome-fcard__text">Cap daily leads per agent so no one is overloaded.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-4"><i class="bi bi-bell" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Instant Alerts</h4><p class="edzhome-fcard__text">Notify agents the moment a lead lands in their queue.</p></article></div>
+            </div>
+          </div>
+        </div>
+        <!-- Pane 3: CRM Management -->
+        <div class="tab-pane fade" id="edzhomePane-crm-management" role="tabpanel" aria-labelledby="edzhomeTab-crm-management" tabindex="0">
+          <div class="edzhome-fpanel__top">
+            <ul class="edzhome-tags list-unstyled"><li class="edzhome-tag">Organize</li><li class="edzhome-tag">Engage</li><li class="edzhome-tag">Understand</li></ul>
+            <h3 class="edzhome-fpanel__title">CRM Management</h3>
+            <p class="edzhome-fpanel__desc">See every conversation, document and follow-up in a single 360° customer profile.</p>
+            <div class="edzhome-fpanel__actions">
+              <a class="btn edzhome-btn edzhome-btn--primary edzhome-btn--sm" href="#"><i class="bi bi-arrow-right" aria-hidden="true"></i><span>Explore CRM</span></a>
+              <a class="btn edzhome-btn edzhome-btn--outline edzhome-btn--sm" href="#">Customer Profiles</a>
+            </div>
+          </div>
+          <div class="edzhome-fpanel__cards">
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-1"><i class="bi bi-person-vcard" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">360° Profiles</h4><p class="edzhome-fcard__text">Contact details, history and documents together in one view.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-2"><i class="bi bi-clock-history" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Activity Timeline</h4><p class="edzhome-fcard__text">Every call, message and status change recorded automatically.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-3"><i class="bi bi-journal-check" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Notes &amp; Tasks</h4><p class="edzhome-fcard__text">Add notes and set follow-up tasks on any customer record.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-4"><i class="bi bi-funnel" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Smart Segments</h4><p class="edzhome-fcard__text">Group customers by behaviour, stage or source in a click.</p></article></div>
+            </div>
+          </div>
+        </div>
+        <!-- Pane 4: Marketing Automation -->
+        <div class="tab-pane fade" id="edzhomePane-marketing-automation" role="tabpanel" aria-labelledby="edzhomeTab-marketing-automation" tabindex="0">
+          <div class="edzhome-fpanel__top">
+            <ul class="edzhome-tags list-unstyled"><li class="edzhome-tag">Trigger</li><li class="edzhome-tag">Nurture</li><li class="edzhome-tag">Measure</li></ul>
+            <h3 class="edzhome-fpanel__title">Marketing Automation</h3>
+            <p class="edzhome-fpanel__desc">Build workflows that follow up on every lead at the right moment, without manual effort.</p>
+            <div class="edzhome-fpanel__actions">
+              <a class="btn edzhome-btn edzhome-btn--primary edzhome-btn--sm" href="#"><i class="bi bi-arrow-right" aria-hidden="true"></i><span>Explore Workflows</span></a>
+              <a class="btn edzhome-btn edzhome-btn--outline edzhome-btn--sm" href="#">Campaign Reports</a>
+            </div>
+          </div>
+          <div class="edzhome-fpanel__cards">
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-1"><i class="bi bi-diagram-3" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Visual Workflows</h4><p class="edzhome-fcard__text">Design follow-up journeys with a simple drag-and-drop builder.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-2"><i class="bi bi-envelope-paper" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Drip Campaigns</h4><p class="edzhome-fcard__text">Send timed email, SMS and WhatsApp sequences automatically.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-3"><i class="bi bi-lightning-charge" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Behaviour Triggers</h4><p class="edzhome-fcard__text">Act instantly when a lead opens, clicks or goes quiet.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-4"><i class="bi bi-bar-chart-line" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Campaign Analytics</h4><p class="edzhome-fcard__text">See what works with clear delivery and response reports.</p></article></div>
+            </div>
+          </div>
+        </div>
+        <!-- Pane 5: Deal Pipeline -->
+        <div class="tab-pane fade" id="edzhomePane-deal-pipeline" role="tabpanel" aria-labelledby="edzhomeTab-deal-pipeline" tabindex="0">
+          <div class="edzhome-fpanel__top">
+            <ul class="edzhome-tags list-unstyled"><li class="edzhome-tag">Visualize</li><li class="edzhome-tag">Prioritize</li><li class="edzhome-tag">Close</li></ul>
+            <h3 class="edzhome-fpanel__title">Deal Pipeline</h3>
+            <p class="edzhome-fpanel__desc">Track every deal on a visual pipeline and move opportunities forward with clarity.</p>
+            <div class="edzhome-fpanel__actions">
+              <a class="btn edzhome-btn edzhome-btn--primary edzhome-btn--sm" href="#"><i class="bi bi-arrow-right" aria-hidden="true"></i><span>Explore Pipeline</span></a>
+              <a class="btn edzhome-btn edzhome-btn--outline edzhome-btn--sm" href="#">Pipeline Stages</a>
+            </div>
+          </div>
+          <div class="edzhome-fpanel__cards">
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-1"><i class="bi bi-kanban" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Drag-and-Drop Stages</h4><p class="edzhome-fcard__text">Move deals across stages with one simple gesture.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-2"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Deal Forecasting</h4><p class="edzhome-fcard__text">Predict revenue from the value and stage of open deals.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-3"><i class="bi bi-trophy" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Win/Loss Insights</h4><p class="edzhome-fcard__text">Learn why deals close or drop so you can improve.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-4"><i class="bi bi-alarm" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Follow-up Reminders</h4><p class="edzhome-fcard__text">Never let a warm deal go cold with timely nudges.</p></article></div>
+            </div>
+          </div>
+        </div>
+        <!-- Pane 6: Quotes &amp; Invoicing -->
+        <div class="tab-pane fade" id="edzhomePane-quotes-invoicing" role="tabpanel" aria-labelledby="edzhomeTab-quotes-invoicing" tabindex="0">
+          <div class="edzhome-fpanel__top">
+            <ul class="edzhome-tags list-unstyled"><li class="edzhome-tag">Quote</li><li class="edzhome-tag">Invoice</li><li class="edzhome-tag">Collect</li></ul>
+            <h3 class="edzhome-fpanel__title">Quotes &amp; Invoicing</h3>
+            <p class="edzhome-fpanel__desc">Create professional quotes and GST-ready invoices in a few clicks and turn approvals into payments.</p>
+            <div class="edzhome-fpanel__actions">
+              <a class="btn edzhome-btn edzhome-btn--primary edzhome-btn--sm" href="#"><i class="bi bi-arrow-right" aria-hidden="true"></i><span>Explore Invoicing</span></a>
+              <a class="btn edzhome-btn edzhome-btn--outline edzhome-btn--sm" href="#">Quote Templates</a>
+            </div>
+          </div>
+          <div class="edzhome-fpanel__cards">
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-1"><i class="bi bi-file-earmark-text" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Instant Quotes</h4><p class="edzhome-fcard__text">Send branded quotes from templates in seconds.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-2"><i class="bi bi-receipt" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">GST Invoices</h4><p class="edzhome-fcard__text">Generate compliant invoices with taxes calculated for you.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-3"><i class="bi bi-calendar-check" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Recurring Billing</h4><p class="edzhome-fcard__text">Schedule fee plans and repeat invoices automatically.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-4"><i class="bi bi-cash-coin" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Payment Status</h4><p class="edzhome-fcard__text">See what is paid, pending or overdue at a glance.</p></article></div>
+            </div>
+          </div>
+        </div>
+        <!-- Pane 7: Payments -->
+        <div class="tab-pane fade" id="edzhomePane-payments" role="tabpanel" aria-labelledby="edzhomeTab-payments" tabindex="0">
+          <div class="edzhome-fpanel__top">
+            <ul class="edzhome-tags list-unstyled"><li class="edzhome-tag">Collect</li><li class="edzhome-tag">Reconcile</li><li class="edzhome-tag">Remind</li></ul>
+            <h3 class="edzhome-fpanel__title">Payments</h3>
+            <p class="edzhome-fpanel__desc">Collect fees and invoice payments securely online, and keep every transaction tracked.</p>
+            <div class="edzhome-fpanel__actions">
+              <a class="btn edzhome-btn edzhome-btn--primary edzhome-btn--sm" href="#"><i class="bi bi-arrow-right" aria-hidden="true"></i><span>Explore Payments</span></a>
+              <a class="btn edzhome-btn edzhome-btn--outline edzhome-btn--sm" href="#">Payment Links</a>
+            </div>
+          </div>
+          <div class="edzhome-fpanel__cards">
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-1"><i class="bi bi-link-45deg" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Online Payment Links</h4><p class="edzhome-fcard__text">Share a secure link and get paid over WhatsApp, SMS or email.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-2"><i class="bi bi-credit-card-2-front" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Multiple Payment Modes</h4><p class="edzhome-fcard__text">Accept UPI, cards, net banking and offline payments.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-3"><i class="bi bi-check2-circle" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Auto Reconciliation</h4><p class="edzhome-fcard__text">Payments match to invoices without manual entry.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-4"><i class="bi bi-envelope-check" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Payment Reminders</h4><p class="edzhome-fcard__text">Gentle automatic reminders before and after due dates.</p></article></div>
+            </div>
+          </div>
+        </div>
+        <!-- Pane 8: Helpdesk &amp; Ticketing -->
+        <div class="tab-pane fade" id="edzhomePane-helpdesk-ticketing" role="tabpanel" aria-labelledby="edzhomeTab-helpdesk-ticketing" tabindex="0">
+          <div class="edzhome-fpanel__top">
+            <ul class="edzhome-tags list-unstyled"><li class="edzhome-tag">Receive</li><li class="edzhome-tag">Resolve</li><li class="edzhome-tag">Improve</li></ul>
+            <h3 class="edzhome-fpanel__title">Helpdesk &amp; Ticketing</h3>
+            <p class="edzhome-fpanel__desc">Manage every support request in one place and resolve tickets faster with clear ownership.</p>
+            <div class="edzhome-fpanel__actions">
+              <a class="btn edzhome-btn edzhome-btn--primary edzhome-btn--sm" href="#"><i class="bi bi-arrow-right" aria-hidden="true"></i><span>Explore Helpdesk</span></a>
+              <a class="btn edzhome-btn edzhome-btn--outline edzhome-btn--sm" href="#">Ticket Rules</a>
+            </div>
+          </div>
+          <div class="edzhome-fpanel__cards">
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-1"><i class="bi bi-inbox" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Unified Inbox</h4><p class="edzhome-fcard__text">Requests from every channel arrive in one shared queue.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-2"><i class="bi bi-person-check" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Ticket Assignment</h4><p class="edzhome-fcard__text">Route tickets to the right team member automatically.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-3"><i class="bi bi-stopwatch" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">SLA Tracking</h4><p class="edzhome-fcard__text">Set response targets and get alerted before they slip.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-4"><i class="bi bi-hand-thumbs-up" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Satisfaction Feedback</h4><p class="edzhome-fcard__text">Collect ratings after every resolved ticket.</p></article></div>
+            </div>
+          </div>
+        </div>
+        <!-- Pane 9: Field Force -->
+        <div class="tab-pane fade" id="edzhomePane-field-force" role="tabpanel" aria-labelledby="edzhomeTab-field-force" tabindex="0">
+          <div class="edzhome-fpanel__top">
+            <ul class="edzhome-tags list-unstyled"><li class="edzhome-tag">Track</li><li class="edzhome-tag">Assign</li><li class="edzhome-tag">Verify</li></ul>
+            <h3 class="edzhome-fpanel__title">Field Force</h3>
+            <p class="edzhome-fpanel__desc">Keep remote and field teams accountable with live GPS tracking and task-based visits.</p>
+            <div class="edzhome-fpanel__actions">
+              <a class="btn edzhome-btn edzhome-btn--primary edzhome-btn--sm" href="#"><i class="bi bi-arrow-right" aria-hidden="true"></i><span>Explore Field Force</span></a>
+              <a class="btn edzhome-btn edzhome-btn--outline edzhome-btn--sm" href="#">Live Map</a>
+            </div>
+          </div>
+          <div class="edzhome-fpanel__cards">
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-1"><i class="bi bi-geo-alt" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Live GPS Tracking</h4><p class="edzhome-fcard__text">See where your field team is in real time on a map.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-2"><i class="bi bi-pin-map" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Visit Check-ins</h4><p class="edzhome-fcard__text">Verified check-ins with location and time stamps.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-3"><i class="bi bi-list-task" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Task Assignment</h4><p class="edzhome-fcard__text">Assign visits and follow-ups and track completion.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-4"><i class="bi bi-signpost-2" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Route &amp; Distance Reports</h4><p class="edzhome-fcard__text">Review distance covered and visits made each day.</p></article></div>
+            </div>
+          </div>
+        </div>
+        <!-- Pane 10: AI Chatbots -->
+        <div class="tab-pane fade" id="edzhomePane-ai-chatbots" role="tabpanel" aria-labelledby="edzhomeTab-ai-chatbots" tabindex="0">
+          <div class="edzhome-fpanel__top">
+            <ul class="edzhome-tags list-unstyled"><li class="edzhome-tag">Answer</li><li class="edzhome-tag">Qualify</li><li class="edzhome-tag">Hand off</li></ul>
+            <h3 class="edzhome-fpanel__title">AI Chatbots</h3>
+            <p class="edzhome-fpanel__desc">Engage visitors around the clock with AI chatbots that answer questions and capture leads.</p>
+            <div class="edzhome-fpanel__actions">
+              <a class="btn edzhome-btn edzhome-btn--primary edzhome-btn--sm" href="#"><i class="bi bi-arrow-right" aria-hidden="true"></i><span>Explore Chatbots</span></a>
+              <a class="btn edzhome-btn edzhome-btn--outline edzhome-btn--sm" href="#">Train Your Bot</a>
+            </div>
+          </div>
+          <div class="edzhome-fpanel__cards">
+            <div class="row row-cols-1 row-cols-md-2 g-3">
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-1"><i class="bi bi-chat-dots" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">24x7 Replies</h4><p class="edzhome-fcard__text">Answer common questions instantly, any time of day.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-2"><i class="bi bi-clipboard-check" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Lead Qualification</h4><p class="edzhome-fcard__text">Ask the right questions and score leads before handoff.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-3"><i class="bi bi-lightbulb" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Smart Knowledge Base</h4><p class="edzhome-fcard__text">Train the bot on your courses, fees and policies.</p></article></div>
+                <div class="col"><article class="edzhome-fcard"><span class="edzhome-ficon edzhome-tint-4"><i class="bi bi-people" aria-hidden="true"></i></span><h4 class="edzhome-fcard__title">Human Handoff</h4><p class="edzhome-fcard__text">Pass complex chats to your team with full context.</p></article></div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <!-- Detail panels end -->
+
+    </div>
+  </div>
+</section>
+<!-- Product features end -->
+
+<!-- ====== Why different start (paste after Product features, inside <main>) ====== -->
+<section class="edzhome-section edzhome-why" aria-labelledby="edzhomeWhyTitle">
+  <div class="container">
+    <header class="edzhome-head text-center">
+      <span class="edzhome-badge"><i class="bi bi-fire" aria-hidden="true"></i>Why EDZHICRM</span>
+      <h2 class="edzhome-head__title" id="edzhomeWhyTitle">9 Reasons Why <span class="edzhome-accent">We're Different</span></h2>
+      <p class="edzhome-head__sub">Not just another CRM. Here's what makes EDZHICRM the obvious choice.</p>
+    </header>
+    <!-- 1 col phones · 2 cols tablets · 3 cols desktop; h-100 = equal heights -->
+    <div class="row g-3 g-lg-4">
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100 edzhome-wcard edzhome-wcard--featured">
+          <span class="edzhome-icobox edzhome-icobox--lg edzhome-tint-1"><i class="bi bi-wallet2" aria-hidden="true"></i></span>
+          <h3 class="edzhome-wcard__title">Affordable — No Per-Seat Shock</h3>
+          <p class="edzhome-wcard__text">Flat-rate plans with unlimited user options. Stop paying per person.</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100 edzhome-wcard">
+          <span class="edzhome-wcard__num" aria-hidden="true">02</span>
+          <span class="edzhome-icobox edzhome-icobox--lg edzhome-tint-2"><i class="bi bi-layers-fill" aria-hidden="true"></i></span>
+          <h3 class="edzhome-wcard__title">All-in-One Stack</h3>
+          <p class="edzhome-wcard__text">CRM, invoicing, field tracking, and helpdesk — under one login, one database.</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100 edzhome-wcard">
+          <span class="edzhome-wcard__num" aria-hidden="true">03</span>
+          <span class="edzhome-icobox edzhome-icobox--lg edzhome-tint-4"><i class="bi bi-phone-fill" aria-hidden="true"></i></span>
+          <h3 class="edzhome-wcard__title">Mobile First</h3>
+          <p class="edzhome-wcard__text">Full iOS &amp; Android apps. Your team stays productive on any device.</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100 edzhome-wcard">
+          <span class="edzhome-wcard__num" aria-hidden="true">04</span>
+          <span class="edzhome-icobox edzhome-icobox--lg edzhome-tint-2"><i class="bi bi-lightning-charge-fill" aria-hidden="true"></i></span>
+          <h3 class="edzhome-wcard__title">5-Min Setup</h3>
+          <p class="edzhome-wcard__text">Go live without IT. Import your data and start immediately.</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100 edzhome-wcard">
+          <span class="edzhome-wcard__num" aria-hidden="true">05</span>
+          <span class="edzhome-icobox edzhome-icobox--lg edzhome-tint-3"><i class="bi bi-plug-fill" aria-hidden="true"></i></span>
+          <h3 class="edzhome-wcard__title">Rich Integrations</h3>
+          <p class="edzhome-wcard__text">WhatsApp, Facebook, Google Ads, Indiamart, Razorpay &amp; more out of the box.</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100 edzhome-wcard">
+          <span class="edzhome-wcard__num" aria-hidden="true">06</span>
+          <span class="edzhome-icobox edzhome-icobox--lg edzhome-tint-1"><i class="bi bi-shield-fill-check" aria-hidden="true"></i></span>
+          <h3 class="edzhome-wcard__title">Enterprise Security</h3>
+          <p class="edzhome-wcard__text">99.9% uptime SLA, data encryption, role-based access, and audit logs.</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100 edzhome-wcard">
+          <span class="edzhome-wcard__num" aria-hidden="true">07</span>
+          <span class="edzhome-icobox edzhome-icobox--lg edzhome-tint-6"><i class="bi bi-sliders" aria-hidden="true"></i></span>
+          <h3 class="edzhome-wcard__title">Fully Customisable</h3>
+          <p class="edzhome-wcard__text">Custom fields, pipelines, workflows, and reports tailored to your process.</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100 edzhome-wcard">
+          <span class="edzhome-wcard__num" aria-hidden="true">08</span>
+          <span class="edzhome-icobox edzhome-icobox--lg edzhome-tint-5"><i class="bi bi-robot" aria-hidden="true"></i></span>
+          <h3 class="edzhome-wcard__title">AI-Powered Automation</h3>
+          <p class="edzhome-wcard__text">AI chatbots and smart workflows handle follow-ups so your team doesn&#x27;t have to.</p>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <article class="card h-100 edzhome-wcard">
+          <span class="edzhome-wcard__num" aria-hidden="true">09</span>
+          <span class="edzhome-icobox edzhome-icobox--lg edzhome-tint-1"><i class="bi bi-geo-alt-fill" aria-hidden="true"></i></span>
+          <h3 class="edzhome-wcard__title">Built for India</h3>
+          <p class="edzhome-wcard__text">GST-ready invoicing, UPI payments and local lead sources like Indiamart and Justdial.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====== Why different end ====== -->
+
+<!-- ====== Integrations start ====== -->
+<section class="edzhome-section edzhome-int" aria-labelledby="edzhomeIntTitle">
+  <div class="container">
+    <header class="edzhome-head text-center">
+      <span class="edzhome-badge"><i class="bi bi-plug-fill" aria-hidden="true"></i>Integrations</span>
+      <h2 class="edzhome-head__title" id="edzhomeIntTitle">Connects With <span class="edzhome-accent">Your Favourite Tools</span></h2>
+      <p class="edzhome-head__sub">30+ native integrations. EDZHICRM plugs into your existing workflow — no disruption.</p>
+    </header>
+    <!-- 2 cols phones · 3 tablets · 4 laptops · 6 large desktops. Cards are static (not links) -->
+    <ul class="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 g-3 list-unstyled mb-0">
+      <li class="col"><div class="edzhome-icard edzhome-int--fb"><span class="edzhome-icobox"><i class="bi bi-facebook" aria-hidden="true"></i></span><span class="edzhome-icard__name">Facebook Leads</span></div></li>
+      <li class="col"><div class="edzhome-icard edzhome-int--wa"><span class="edzhome-icobox"><i class="bi bi-whatsapp" aria-hidden="true"></i></span><span class="edzhome-icard__name">WhatsApp API</span></div></li>
+      <li class="col"><div class="edzhome-icard edzhome-int--gg"><span class="edzhome-icobox"><i class="bi bi-google" aria-hidden="true"></i></span><span class="edzhome-icard__name">Google Ads</span></div></li>
+      <li class="col"><div class="edzhome-icard edzhome-int--im"><span class="edzhome-icobox"><i class="bi bi-shop" aria-hidden="true"></i></span><span class="edzhome-icard__name">Indiamart</span></div></li>
+      <li class="col"><div class="edzhome-icard edzhome-int--jd"><span class="edzhome-icobox"><i class="bi bi-tags-fill" aria-hidden="true"></i></span><span class="edzhome-icard__name">Justdial</span></div></li>
+      <li class="col"><div class="edzhome-icard edzhome-int--rz"><span class="edzhome-icobox"><i class="bi bi-credit-card-2-front-fill" aria-hidden="true"></i></span><span class="edzhome-icard__name">Razorpay</span></div></li>
+      <li class="col"><div class="edzhome-icard edzhome-int--ig"><span class="edzhome-icobox"><i class="bi bi-instagram" aria-hidden="true"></i></span><span class="edzhome-icard__name">Instagram Leads</span></div></li>
+      <li class="col"><div class="edzhome-icard edzhome-int--em"><span class="edzhome-icobox"><i class="bi bi-envelope-fill" aria-hidden="true"></i></span><span class="edzhome-icard__name">Email Marketing</span></div></li>
+      <li class="col"><div class="edzhome-icard edzhome-int--mp"><span class="edzhome-icobox"><i class="bi bi-map-fill" aria-hidden="true"></i></span><span class="edzhome-icard__name">Google Maps</span></div></li>
+      <li class="col"><div class="edzhome-icard edzhome-int--sm"><span class="edzhome-icobox"><i class="bi bi-chat-left-text-fill" aria-hidden="true"></i></span><span class="edzhome-icard__name">Bulk SMS</span></div></li>
+      <li class="col"><div class="edzhome-icard edzhome-int--ti"><span class="edzhome-icobox"><i class="bi bi-globe2" aria-hidden="true"></i></span><span class="edzhome-icard__name">TradeIndia</span></div></li>
+      <li class="col"><div class="edzhome-icard edzhome-int--ai"><span class="edzhome-icobox"><i class="bi bi-robot" aria-hidden="true"></i></span><span class="edzhome-icard__name">AI Chatbot</span></div></li>
+    </ul>
+    <div class="text-center edzhome-int__cta">
+      <p class="edzhome-int__note">Don't see your tool? We build custom integrations.</p>
+      <a class="btn edzhome-btn edzhome-btn--outline edzhome-btn--md" href="#contact"><i class="bi bi-code-slash" aria-hidden="true"></i>Request Integration</a>
+    </div>
+  </div>
+</section>
+<!-- ====== Integrations end ====== -->
+
+<!-- ====== Pricing start ====== -->
+<section class="edzhome-section edzhome-price" id="pricing" aria-labelledby="edzhomePriceTitle">
+  <div class="container">
+    <header class="edzhome-head text-center">
+      <span class="edzhome-badge"><i class="bi bi-tag-fill" aria-hidden="true"></i>Pricing</span>
+      <h2 class="edzhome-head__title" id="edzhomePriceTitle">Simple, <span class="edzhome-accent">Transparent Pricing</span></h2>
+      <p class="edzhome-head__sub">No hidden fees. No per-seat surprises. Choose your plan and scale freely.</p>
+    </header>
+
+    <!-- Plans: 1 col phones · 2 tablets · 4 desktop. Each card is a flex column so the Trial button sits at the bottom -->
+    <div class="row g-3 g-xl-4">
+      <div class="col-md-6 col-lg-3">
+        <article class="edzhome-plan edzhome-plan--starter">
+          <header class="edzhome-plan__head">
+            <span class="edzhome-icobox edzhome-icobox--lg"><i class="bi bi-people-fill" aria-hidden="true"></i></span>
+            <div><h3 class="edzhome-plan__name">Starter</h3><p class="edzhome-plan__for">For small businesses or teams</p></div>
+          </header>
+          <div class="edzhome-plan__price"><strong>₹999</strong><span>per month<br>billed annually + taxes</span></div>
+          <ul class="edzhome-plan__list">
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Up to 1,000 students</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Basic lead management</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Email support</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Standard reports</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Workflow automation</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Team collaboration</span></li>
+          </ul>
+          <a class="btn edzhome-btn edzhome-plan__btn" href="#trial">Trial <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <article class="edzhome-plan edzhome-plan--growth">
+          <span class="edzhome-plan__badge"><i class="bi bi-crown-fill" aria-hidden="true"></i>Most Popular</span>
+          <header class="edzhome-plan__head">
+            <span class="edzhome-icobox edzhome-icobox--lg"><i class="bi bi-bar-chart-fill" aria-hidden="true"></i></span>
+            <div><h3 class="edzhome-plan__name">Growth</h3><p class="edzhome-plan__for">For growing teams</p></div>
+          </header>
+          <div class="edzhome-plan__price"><strong>₹2,999</strong><span>per month<br>billed annually + taxes</span></div>
+          <ul class="edzhome-plan__list">
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Up to 10,000 students</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Advanced lead management</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Advanced analytics</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Priority support</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Workflow automation</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Team collaboration</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Messaging, video lectures</span></li>
+          </ul>
+          <a class="btn edzhome-btn edzhome-plan__btn" href="#trial">Trial <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <article class="edzhome-plan edzhome-plan--pro">
+          <header class="edzhome-plan__head">
+            <span class="edzhome-icobox edzhome-icobox--lg"><i class="bi bi-gem" aria-hidden="true"></i></span>
+            <div><h3 class="edzhome-plan__name">Pro</h3><p class="edzhome-plan__for">For large organizations</p></div>
+          </header>
+          <div class="edzhome-plan__price"><strong>₹4,999</strong><span>per month<br>billed annually + taxes</span></div>
+          <ul class="edzhome-plan__list">
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Everything in Growth +</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>5,000 students + 30 trainers</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Exams, mock tests, profit and loss, stock</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Staff attendance</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Account manager</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>24/7 phone support</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Custom reporting</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Advanced automation</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>API access</span></li>
+          </ul>
+          <a class="btn edzhome-btn edzhome-plan__btn" href="#trial">Trial <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </article>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <article class="edzhome-plan edzhome-plan--max">
+          <header class="edzhome-plan__head">
+            <span class="edzhome-icobox edzhome-icobox--lg"><i class="bi bi-buildings-fill" aria-hidden="true"></i></span>
+            <div><h3 class="edzhome-plan__name">Max</h3><p class="edzhome-plan__for">For enterprise organizations</p></div>
+          </header>
+          <div class="edzhome-plan__price"><strong>Custom</strong><span>pricing on request</span></div>
+          <ul class="edzhome-plan__list">
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Unlimited students</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Custom lead scoring</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Custom solutions</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Advanced automation</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>API access</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Custom reporting</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Priced for your institute</span></li>
+            <li><span class="edzhome-check"><i class="bi bi-check-lg" aria-hidden="true"></i></span><span>Everything in Pro</span></li>
+          </ul>
+          <a class="btn edzhome-btn edzhome-plan__btn" href="#trial">Trial <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+        </article>
+      </div>
+    </div>
+
+    <!-- Benefits bar -->
+    <div class="edzhome-benefits">
+      <div class="row row-cols-2 row-cols-lg-4 g-3 g-lg-0">
+        <div class="col"><div class="edzhome-benefit"><i class="bi bi-calendar-check" aria-hidden="true"></i><span>7-day free trial on every plan</span></div></div>
+        <div class="col"><div class="edzhome-benefit"><i class="bi bi-credit-card-2-front" aria-hidden="true"></i><span>No credit card required</span></div></div>
+        <div class="col"><div class="edzhome-benefit"><i class="bi bi-x-circle" aria-hidden="true"></i><span>Cancel anytime</span></div></div>
+        <div class="col"><div class="edzhome-benefit"><i class="bi bi-bar-chart-fill" aria-hidden="true"></i><span>Scale with no limits</span></div></div>
+      </div>
+    </div>
+    <p class="edzhome-price__note">Prices are per month, billed annually, plus taxes.</p>
+  </div>
+</section>
+<!-- ====== Pricing end ====== -->
+
+<!-- ====== Comparison start (paste after Pricing, inside <main>) ====== -->
+<section class="edzhome-section edzhome-cmpsec" id="compare" aria-labelledby="edzhomeCmpTitle">
+  <div class="container">
+    <header class="edzhome-head text-center">
+      <span class="edzhome-badge"><i class="bi bi-columns-gap" aria-hidden="true"></i>Comparison</span>
+      <h2 class="edzhome-head__title" id="edzhomeCmpTitle">EDZHICRM vs <span class="edzhome-accent">The Competition</span></h2>
+      <p class="edzhome-head__sub">See exactly how we stack up against traditional CRM + separate tool stacks.</p>
+    </header>
+
+    <!-- Rounded card. .table-responsive scrolls sideways on small screens; Feature column stays pinned -->
+    <div class="edzhome-cmp">
+      <div class="table-responsive edzhome-cmp__scroll" tabindex="0" role="region" aria-label="Comparison table, scrollable">
+        <table class="table align-middle mb-0 edzhome-cmp__table">
+          <caption class="visually-hidden">EDZHICRM compared with Zoho CRM, Salesforce and custom tools</caption>
+          <thead>
+            <tr>
+              <th scope="col">Feature</th>
+              <th scope="col" class="edzhome-cmp__us">EDZHICRM</th>
+              <th scope="col">Zoho CRM</th>
+              <th scope="col">Salesforce</th>
+              <th scope="col">Custom Tools</th>
+            </tr>
+          </thead>
+      <tbody>
+        <tr class="edzhome-cmp__group"><th scope="colgroup" colspan="5"><span class="edzhome-cmp__label">Core CRM</span></th></tr>
+        <tr><th scope="row"><span class="edzhome-cmp__label">Lead Management</span></th><td class="edzhome-cmp__us"><i class="bi bi-check-lg edzhome-cmp__yes" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td><td><i class="bi bi-check-lg edzhome-cmp__yes" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td><td><i class="bi bi-check-lg edzhome-cmp__yes" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td><td><i class="bi bi-x-lg edzhome-cmp__no" aria-hidden="true"></i><span class="visually-hidden">No</span></td></tr>
+        <tr><th scope="row"><span class="edzhome-cmp__label">Marketing Automation</span></th><td class="edzhome-cmp__us"><i class="bi bi-check-lg edzhome-cmp__yes" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td><td><i class="bi bi-check-lg edzhome-cmp__yes" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td><td><i class="bi bi-check-lg edzhome-cmp__yes" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td><td><i class="bi bi-x-lg edzhome-cmp__no" aria-hidden="true"></i><span class="visually-hidden">No</span></td></tr>
+        <tr><th scope="row"><span class="edzhome-cmp__label">Deal Pipeline (Kanban)</span></th><td class="edzhome-cmp__us"><i class="bi bi-check-lg edzhome-cmp__yes" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td><td><i class="bi bi-check-lg edzhome-cmp__yes" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td><td><i class="bi bi-check-lg edzhome-cmp__yes" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td><td><span class="edzhome-cmp__text">Varies</span></td></tr>
+      </tbody>
+      <tbody>
+        <tr class="edzhome-cmp__group"><th scope="colgroup" colspan="5"><span class="edzhome-cmp__label">Unique Strengths</span></th></tr>
+        <tr><th scope="row"><span class="edzhome-cmp__label">GPS Field Force Tracking</span></th><td class="edzhome-cmp__us"><i class="bi bi-check-lg edzhome-cmp__yes" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td><td><i class="bi bi-x-lg edzhome-cmp__no" aria-hidden="true"></i><span class="visually-hidden">No</span></td><td><i class="bi bi-x-lg edzhome-cmp__no" aria-hidden="true"></i><span class="visually-hidden">No</span></td><td><span class="edzhome-cmp__text">Separate App</span></td></tr>
+        <tr><th scope="row"><span class="edzhome-cmp__label">HRMS &amp; Payroll Module</span></th><td class="edzhome-cmp__us"><i class="bi bi-check-lg edzhome-cmp__yes" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td><td><i class="bi bi-x-lg edzhome-cmp__no" aria-hidden="true"></i><span class="visually-hidden">No</span></td><td><i class="bi bi-x-lg edzhome-cmp__no" aria-hidden="true"></i><span class="visually-hidden">No</span></td><td><span class="edzhome-cmp__text">Separate App</span></td></tr>
+        <tr><th scope="row"><span class="edzhome-cmp__label">Integrated Invoicing</span></th><td class="edzhome-cmp__us"><i class="bi bi-check-lg edzhome-cmp__yes" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td><td><span class="edzhome-cmp__text">Add-on</span></td><td><span class="edzhome-cmp__text">Add-on</span></td><td><span class="edzhome-cmp__text">Separate App</span></td></tr>
+        <tr><th scope="row"><span class="edzhome-cmp__label">WhatsApp Automation</span></th><td class="edzhome-cmp__us"><i class="bi bi-check-lg edzhome-cmp__yes" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td><td><span class="edzhome-cmp__text">Add-on</span></td><td><i class="bi bi-x-lg edzhome-cmp__no" aria-hidden="true"></i><span class="visually-hidden">No</span></td><td><span class="edzhome-cmp__text">Varies</span></td></tr>
+      </tbody>
+      <tbody>
+        <tr class="edzhome-cmp__group"><th scope="colgroup" colspan="5"><span class="edzhome-cmp__label">Pricing &amp; Support</span></th></tr>
+        <tr><th scope="row"><span class="edzhome-cmp__label">Unlimited Users Plan</span></th><td class="edzhome-cmp__us"><i class="bi bi-check-lg edzhome-cmp__yes" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td><td><i class="bi bi-x-lg edzhome-cmp__no" aria-hidden="true"></i><span class="visually-hidden">No</span></td><td><i class="bi bi-x-lg edzhome-cmp__no" aria-hidden="true"></i><span class="visually-hidden">No</span></td><td><i class="bi bi-x-lg edzhome-cmp__no" aria-hidden="true"></i><span class="visually-hidden">No</span></td></tr>
+        <tr><th scope="row"><span class="edzhome-cmp__label">Starting Price (per user)</span></th><td class="edzhome-cmp__us"><strong class="edzhome-cmp__price">₹149/mo</strong></td><td><span class="edzhome-cmp__text">₹800/mo</span></td><td><span class="edzhome-cmp__text">₹2,500/mo</span></td><td><span class="edzhome-cmp__text">₹500+/mo</span></td></tr>
+        <tr><th scope="row"><span class="edzhome-cmp__label">24×7 Support</span></th><td class="edzhome-cmp__us"><i class="bi bi-check-lg edzhome-cmp__yes" aria-hidden="true"></i><span class="visually-hidden">Yes</span></td><td><span class="edzhome-cmp__text">Paid Plan</span></td><td><span class="edzhome-cmp__text">Paid Plan</span></td><td><i class="bi bi-x-lg edzhome-cmp__no" aria-hidden="true"></i><span class="visually-hidden">No</span></td></tr>
+        <tr><th scope="row"><span class="edzhome-cmp__label">Setup Time</span></th><td class="edzhome-cmp__us"><strong class="edzhome-cmp__good">5 Minutes</strong></td><td><span class="edzhome-cmp__text">Days</span></td><td><span class="edzhome-cmp__text">Weeks</span></td><td><span class="edzhome-cmp__text">Months</span></td></tr>
+      </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====== Comparison end ====== -->
+
+<!-- ====== Testimonials start (paste after Comparison, inside <main>) ====== -->
+<section class="edzhome-section edzhome-tsec" aria-labelledby="edzhomeTestTitle">
+  <div class="container">
+    <header class="edzhome-head text-center">
+      <span class="edzhome-badge"><i class="bi bi-star-fill" aria-hidden="true"></i>Customer stories</span>
+      <h2 class="edzhome-head__title" id="edzhomeTestTitle">12,450 Businesses <span class="edzhome-accent">Can't Be Wrong</span></h2>
+      <p class="edzhome-head__sub">Real stories from real businesses across India who transformed their operations with EDZHICRM.</p>
+    </header>
+  </div>
+
+  <!-- Full-width auto-scrolling carousel. Native scroll container = swipe works. JS adds the loop copies -->
+  <div class="edzhome-tscroll" data-edzhome-carousel tabindex="0" role="region" aria-label="Customer testimonials, scrollable">
+    <div class="edzhome-ttrack">
+      <div class="edzhome-tgroup">
+          <article class="edzhome-tcard">
+            <div class="edzhome-stars" role="img" aria-label="Rated 5 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <blockquote class="edzhome-tcard__quote"><p>EDZHICRM completely transformed how we handle our 40-person field team. The GPS tracking alone saves us 3 hours every day. The helpdesk now shows full customer context — it&#x27;s a game-changer.</p></blockquote>
+            <footer class="edzhome-tcard__author">
+              <span class="edzhome-avatar edzhome-tint-6" aria-hidden="true">RK</span>
+              <span><strong>Rajesh Kumar</strong><small>Operations Head, BuildTech India</small></span>
+            </footer>
+          </article>
+          <article class="edzhome-tcard">
+            <div class="edzhome-stars" role="img" aria-label="Rated 5 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <blockquote class="edzhome-tcard__quote"><p>We moved from 3 different apps to just EDZHICRM and saved ₹6,000/month. The WhatsApp automation cut our lead response time from 2 hours to under 5 minutes. Revenue jumped 38% in 3 months.</p></blockquote>
+            <footer class="edzhome-tcard__author">
+              <span class="edzhome-avatar edzhome-tint-5" aria-hidden="true">PS</span>
+              <span><strong>Priya Sharma</strong><small>Founder, PropSpace Realty</small></span>
+            </footer>
+          </article>
+          <article class="edzhome-tcard">
+            <div class="edzhome-stars" role="img" aria-label="Rated 4.5 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+            <blockquote class="edzhome-tcard__quote"><p>Set up took 20 minutes flat. Our travel agency manages 400+ leads a month now with zero data leakage. The invoicing module makes our finance team very happy. Highly recommended!</p></blockquote>
+            <footer class="edzhome-tcard__author">
+              <span class="edzhome-avatar edzhome-tint-4" aria-hidden="true">AM</span>
+              <span><strong>Aditya Mehta</strong><small>CEO, TravelBridge India</small></span>
+            </footer>
+          </article>
+          <article class="edzhome-tcard">
+            <div class="edzhome-stars" role="img" aria-label="Rated 5 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <blockquote class="edzhome-tcard__quote"><p>Enquiries, batches, fee reminders and certificates now live in one place. Our counselors follow up on time and admissions are up 30% this year.</p></blockquote>
+            <footer class="edzhome-tcard__author">
+              <span class="edzhome-avatar edzhome-tint-3" aria-hidden="true">NV</span>
+              <span><strong>Neha Verma</strong><small>Director, EduReach India</small></span>
+            </footer>
+          </article>
+          <article class="edzhome-tcard">
+            <div class="edzhome-stars" role="img" aria-label="Rated 5 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+            <blockquote class="edzhome-tcard__quote"><p>Lead distribution means every enquiry reaches the right agent in seconds. We stopped losing leads to slow follow-ups, and renewals are finally tracked properly.</p></blockquote>
+            <footer class="edzhome-tcard__author">
+              <span class="edzhome-avatar edzhome-tint-2" aria-hidden="true">KM</span>
+              <span><strong>Karan Malhotra</strong><small>Owner, InsureNow</small></span>
+            </footer>
+          </article>
+          <article class="edzhome-tcard">
+            <div class="edzhome-stars" role="img" aria-label="Rated 4.5 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></div>
+            <blockquote class="edzhome-tcard__quote"><p>The pipeline view and automation workflows replaced two tools for us. Onboarding was quick and the support team replied the same day.</p></blockquote>
+            <footer class="edzhome-tcard__author">
+              <span class="edzhome-avatar edzhome-tint-1" aria-hidden="true">SI</span>
+              <span><strong>Sneha Iyer</strong><small>COO, LaunchPath SaaS</small></span>
+            </footer>
+          </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- Rating summary -->
+  <div class="container text-center">
+    <div class="edzhome-rating">
+      <strong class="edzhome-rating__score">4.9</strong>
+      <span>
+        <span class="edzhome-stars" role="img" aria-label="Rated 4.9 out of 5"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+        <small>Based on 12,450+ verified reviews</small>
+      </span>
+    </div>
+  </div>
+</section>
+<!-- ====== Testimonials end ====== -->
+
+<!-- ====== FAQ start ====== -->
+<section class="edzhome-section edzhome-faq" id="faq" aria-labelledby="edzhomeFaqTitle">
+  <div class="container">
+    <header class="edzhome-head text-center">
+      <span class="edzhome-badge"><i class="bi bi-question-circle-fill" aria-hidden="true"></i>FAQ</span>
+      <h2 class="edzhome-head__title" id="edzhomeFaqTitle">Common <span class="edzhome-accent">Questions</span></h2>
+      <p class="edzhome-head__sub">Everything you need to know before you get started.</p>
+    </header>
+
+    <!-- Two independent Bootstrap accordions (no data-bs-parent: every item opens/closes on its own) -->
+    <div class="row g-3 align-items-start">
+      <div class="col-12 col-md-6">
+        <div class="accordion edzhome-faq__list">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#edzhomeFaq1" aria-expanded="false" aria-controls="edzhomeFaq1">
+                <span class="edzhome-faq__q">Is there really no setup fee or hidden charges?</span>
+                <span class="edzhome-faq__icon" aria-hidden="true"><i class="bi bi-plus"></i><i class="bi bi-dash"></i></span>
+              </button>
+            </h3>
+            <div id="edzhomeFaq1" class="accordion-collapse collapse">
+              <div class="accordion-body">No. Plans are flat-rate with no setup fee and no hidden charges. Taxes are added at checkout, and messaging credits are optional top-ups.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#edzhomeFaq3" aria-expanded="false" aria-controls="edzhomeFaq3">
+                <span class="edzhome-faq__q">Can I import data from my existing CRM?</span>
+                <span class="edzhome-faq__icon" aria-hidden="true"><i class="bi bi-plus"></i><i class="bi bi-dash"></i></span>
+              </button>
+            </h3>
+            <div id="edzhomeFaq3" class="accordion-collapse collapse">
+              <div class="accordion-body">Yes. Import leads and contacts from Excel or CSV files or from your current CRM, and our team can help with larger migrations.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#edzhomeFaq5" aria-expanded="false" aria-controls="edzhomeFaq5">
+                <span class="edzhome-faq__q">Does the mobile app work offline?</span>
+                <span class="edzhome-faq__icon" aria-hidden="true"><i class="bi bi-plus"></i><i class="bi bi-dash"></i></span>
+              </button>
+            </h3>
+            <div id="edzhomeFaq5" class="accordion-collapse collapse">
+              <div class="accordion-body">The mobile app lets you capture and view key details, and field activity syncs automatically as soon as your phone is back online.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#edzhomeFaq7" aria-expanded="false" aria-controls="edzhomeFaq7">
+                <span class="edzhome-faq__q">Can I upgrade or downgrade my plan anytime?</span>
+                <span class="edzhome-faq__icon" aria-hidden="true"><i class="bi bi-plus"></i><i class="bi bi-dash"></i></span>
+              </button>
+            </h3>
+            <div id="edzhomeFaq7" class="accordion-collapse collapse">
+              <div class="accordion-body">Yes. You can change your plan at any time, and the change applies from your next billing cycle.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="accordion edzhome-faq__list">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#edzhomeFaq2" aria-expanded="false" aria-controls="edzhomeFaq2">
+                <span class="edzhome-faq__q">How long does it take to set up EDZHICRM?</span>
+                <span class="edzhome-faq__icon" aria-hidden="true"><i class="bi bi-plus"></i><i class="bi bi-dash"></i></span>
+              </button>
+            </h3>
+            <div id="edzhomeFaq2" class="accordion-collapse collapse">
+              <div class="accordion-body">Most teams are up and running in about 5 minutes. Import your data, invite your team and start working the same day.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#edzhomeFaq4" aria-expanded="false" aria-controls="edzhomeFaq4">
+                <span class="edzhome-faq__q">What happens to my data if I cancel?</span>
+                <span class="edzhome-faq__icon" aria-hidden="true"><i class="bi bi-plus"></i><i class="bi bi-dash"></i></span>
+              </button>
+            </h3>
+            <div id="edzhomeFaq4" class="accordion-collapse collapse">
+              <div class="accordion-body">You can export your data at any time. After you cancel, you can request deletion of your data.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#edzhomeFaq6" aria-expanded="false" aria-controls="edzhomeFaq6">
+                <span class="edzhome-faq__q">Is my data secure? Where is it stored?</span>
+                <span class="edzhome-faq__icon" aria-hidden="true"><i class="bi bi-plus"></i><i class="bi bi-dash"></i></span>
+              </button>
+            </h3>
+            <div id="edzhomeFaq6" class="accordion-collapse collapse">
+              <div class="accordion-body">Your data is encrypted and stored on secure cloud servers, with role-based access control and audit logs.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#edzhomeFaq8" aria-expanded="false" aria-controls="edzhomeFaq8">
+                <span class="edzhome-faq__q">What support channels are available?</span>
+                <span class="edzhome-faq__icon" aria-hidden="true"><i class="bi bi-plus"></i><i class="bi bi-dash"></i></span>
+              </button>
+            </h3>
+            <div id="edzhomeFaq8" class="accordion-collapse collapse">
+              <div class="accordion-body">Email and chat support on every plan, priority support on Growth and above, and 24/7 phone support on Pro.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ====== FAQ end ====== -->
+
+</main>
+
+<!-- ====== Footer start (place after </main>) ====== -->
+<footer class="edzhome-footer">
+  <div class="container">
+    <div class="row g-4 g-lg-3">
+
+      <!-- Brand column -->
+      <div class="col-12 col-lg-4">
+        <a class="edzhome-footer__logo" href="/" aria-label="EDZHICRM home"><img src="logo.png" alt="EDZHICRM"></a>
+        <p class="edzhome-footer__about">All-in-one business CRM combining lead management, field force GPS tracking, invoicing, helpdesk and AI automation.</p>
+        <span class="edzhome-iso"><i class="bi bi-shield-fill-check" aria-hidden="true"></i>ISO 27001 Certified</span>
+        <div class="edzhome-footer__social">
+          <a class="edzhome-social" href="#" aria-label="X (Twitter)"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+          <a class="edzhome-social" href="#" aria-label="LinkedIn"><i class="bi bi-linkedin" aria-hidden="true"></i></a>
+          <a class="edzhome-social" href="#" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+          <a class="edzhome-social" href="#" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+          <a class="edzhome-social" href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <!-- Link columns: 2 per row on phones, 4 across from 768px -->
+      <nav class="col-6 col-md-3 col-lg-2" aria-label="CRM Features">
+        <h3 class="edzhome-footer__title">CRM Features</h3>
+        <ul class="edzhome-footer__links list-unstyled">
+          <li><a href="#">Lead Generation</a></li>
+          <li><a href="#">Lead Distribution</a></li>
+          <li><a href="#">Deal Pipeline</a></li>
+          <li><a href="#">Marketing Automation</a></li>
+          <li><a href="#">Quotes &amp; Invoicing</a></li>
+          <li><a href="#">Payment Gateway</a></li>
+          <li><a href="#">Helpdesk Ticketing</a></li>
+          <li><a href="#">AI Chatbot</a></li>
+        </ul>
+      </nav>
+      <nav class="col-6 col-md-3 col-lg-2" aria-label="Field Force">
+        <h3 class="edzhome-footer__title">Field Force</h3>
+        <ul class="edzhome-footer__links list-unstyled">
+          <li><a href="#">GPS Employee Tracking</a></li>
+          <li><a href="#">Field Service FSM</a></li>
+          <li><a href="#">Geo Attendance</a></li>
+          <li><a href="#">Beat Plan Scheduler</a></li>
+          <li><a href="#">MR Reporting</a></li>
+          <li><a href="#">HRMS &amp; Payroll</a></li>
+          <li><a href="#">Expense Management</a></li>
+        </ul>
+      </nav>
+      <nav class="col-6 col-md-3 col-lg-2" aria-label="Industries">
+        <h3 class="edzhome-footer__title">Industries</h3>
+        <ul class="edzhome-footer__links list-unstyled">
+          <li><a href="#">Real Estate CRM</a></li>
+          <li><a href="#">Travel Agency</a></li>
+          <li><a href="#">Insurance Agency</a></li>
+          <li><a href="#">Education &amp; Coaching</a></li>
+          <li><a href="#">SaaS &amp; Startups</a></li>
+          <li><a href="#">Logistics</a></li>
+          <li><a href="#">Manufacturing</a></li>
+        </ul>
+      </nav>
+      <nav class="col-6 col-md-3 col-lg-2" aria-label="Company">
+        <h3 class="edzhome-footer__title">Company</h3>
+        <ul class="edzhome-footer__links list-unstyled">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Blog &amp; Resources</a></li>
+          <li><a href="#">Become a Partner</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="edzhome-footer__bar">
+      <p class="edzhome-footer__copy">© 2026 EDZHICRM. All rights reserved. Made with <i class="bi bi-heart-fill edzhome-footer__heart" aria-label="love"></i> for Indian businesses.</p>
+      <ul class="edzhome-footer__legal list-unstyled">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Refunds</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<!-- ====== Footer end ====== -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="./edzhi.js" defer></script>
+</body>
+</html>

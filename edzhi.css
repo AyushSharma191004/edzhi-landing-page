@@ -1,0 +1,1148 @@
+:root {
+  /* ---------- 1. BRAND COLOURS ---------- */
+  --edz-color-primary: #FFC72C;          /* edzhi yellow – buttons, icons, highlights */
+  --edz-color-primary-hover: #F2B600;    /* darker yellow for hover/active */
+  --edz-color-primary-rgb: 255, 199, 44;
+
+  --edz-color-dark: #17120A;             /* warm near-black – text, borders, dark cards */
+  --edz-color-dark-hover: #2B2315;       /* dark hover / dark-card inner tiles */
+  --edz-color-dark-rgb: 23, 18, 10;
+
+  /* ---------- 2. BACKGROUNDS ---------- */
+  --edz-bg-body: #FFFAEB;                /* default cream page background */
+  --edz-bg-surface: #FFFDF5;             /* card / tile surface (near white) */
+  --edz-bg-soft: #FFEFB8;                /* pale yellow section / chip background */
+  --edz-bg-primary: var(--edz-color-primary);
+  --edz-bg-dark: var(--edz-color-dark);
+  --edz-bg-white: #FFFFFF;
+
+  /* ---------- 3. TEXT COLOURS ---------- */
+  --edz-text-heading: var(--edz-color-dark);
+  --edz-text-body: var(--edz-color-dark);
+  --edz-text-muted: #5C574B;             /* sub-copy, captions */
+  --edz-text-eyebrow: #8A6200;           /* small uppercase labels (brown-gold) */
+  --edz-text-on-dark: #FFFFFF;
+  --edz-text-on-dark-muted: #E6DFCB;
+  --edz-text-accent-on-dark: var(--edz-color-primary);  /* yellow text on dark bg */
+  --edz-text-link: var(--edz-color-dark);
+  --edz-text-link-hover: #8A6200;
+
+  /* ---------- 4. BORDERS ---------- */
+  --edz-border-width: 2px;               /* signature outlined-card look */
+  --edz-border-width-thin: 1px;
+  --edz-border-color: var(--edz-color-dark);
+  --edz-border-color-soft: rgba(var(--edz-color-dark-rgb), .15);
+  --edz-border: var(--edz-border-width) solid var(--edz-border-color);
+
+  /* ---------- 5. BORDER RADIUS ---------- */
+  /* Scale */
+  --edz-radius-sm: 0.25rem;              /* 4px  */
+  --edz-radius-md: 0.5rem;               /* 8px  */
+  --edz-radius-lg: 0.75rem;              /* 12px */
+  --edz-radius-xl: 1rem;                 /* 16px */
+  --edz-radius-2xl: 1.25rem;             /* 20px */
+  --edz-radius-3xl: 2rem;                /* 32px */
+  --edz-radius-full: 9999px;             /* pill / circle */
+  --edz-radius-circle: 50%;              /* perfect circle / oval */
+  /* Design-specific (from brand PDF) */
+  --edz-radius-tile: 0.875rem;           /* 14px – chips, stat tiles, feature rows */
+  --edz-radius-button: 1.25rem;          /* 20px – buttons, banners */
+  --edz-radius-card: 1.5rem;             /* 24px – main cards */
+
+  /* ---------- 6. SHADOWS (hard offset "neo-brutal" style) ---------- */
+  --edz-shadow-offset: 8px;
+  --edz-shadow-offset-sm: 5px;
+  --edz-shadow-dark: var(--edz-shadow-offset) var(--edz-shadow-offset) 0 var(--edz-color-dark);
+  --edz-shadow-primary: var(--edz-shadow-offset) var(--edz-shadow-offset) 0 var(--edz-color-primary);
+  --edz-shadow-dark-sm: var(--edz-shadow-offset-sm) var(--edz-shadow-offset-sm) 0 var(--edz-color-dark);
+  --edz-shadow-primary-sm: var(--edz-shadow-offset-sm) var(--edz-shadow-offset-sm) 0 var(--edz-color-primary);
+  --edz-shadow-soft: 0 10px 30px rgba(var(--edz-color-dark-rgb), .08);   /* optional soft shadow */
+
+  /* ---------- 7. TYPOGRAPHY – FAMILY ---------- */
+  --edz-font-family-base: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+
+  /* ---------- 8. TYPOGRAPHY – SIZES ---------- */
+  --edz-font-size-xs: 0.75rem;           /* 12px */
+  --edz-font-size-sm: 0.875rem;          /* 14px */
+  --edz-font-size-base: 1rem;            /* 16px */
+  --edz-font-size-lg: 1.125rem;          /* 18px */
+  --edz-font-size-xl: 1.25rem;           /* 20px */
+  --edz-font-size-2xl: 1.5rem;           /* 24px */
+  --edz-font-size-3xl: 1.875rem;         /* 30px */
+  --edz-font-size-4xl: 2.25rem;          /* 36px */
+  /* Fluid display sizes (max = desktop size from design) */
+  --edz-font-size-5xl: clamp(1.875rem, 1.4rem + 2vw, 3rem);       /* up to 48px – section titles */
+  --edz-font-size-6xl: clamp(2.25rem, 1.6rem + 2.8vw, 4rem);      /* up to 64px – plan prices */
+  --edz-font-size-7xl: clamp(2.5rem, 1.7rem + 3.5vw, 4.5rem);     /* up to 72px – hero title */
+
+  /* ---------- 9. TYPOGRAPHY – WEIGHTS ---------- */
+  --edz-font-weight-normal: 400;
+  --edz-font-weight-medium: 500;
+  --edz-font-weight-semibold: 600;
+  --edz-font-weight-bold: 700;
+  --edz-font-weight-extrabold: 800;
+
+  /* ---------- 10. TYPOGRAPHY – LINE HEIGHT & LETTER SPACING ---------- */
+  --edz-line-height-tight: 1.25;
+  --edz-line-height-normal: 1.5;
+  --edz-line-height-relaxed: 1.75;
+
+  --edz-letter-spacing-tight: -0.025em;
+  --edz-letter-spacing-normal: 0;
+  --edz-letter-spacing-wide: 0.025em;
+
+  /* ---------- 11. SPACING ---------- */
+  --edz-spacing-1: 0.25rem;              /* 4px  */
+  --edz-spacing-2: 0.5rem;               /* 8px  */
+  --edz-spacing-3: 0.75rem;              /* 12px */
+  --edz-spacing-4: 1rem;                 /* 16px */
+  --edz-spacing-5: 1.25rem;              /* 20px */
+  --edz-spacing-6: 1.5rem;               /* 24px */
+  --edz-spacing-8: 2rem;                 /* 32px */
+  --edz-spacing-10: 2.5rem;              /* 40px */
+  --edz-spacing-12: 3rem;                /* 48px */
+  --edz-spacing-16: 4rem;                /* 64px */
+  --edz-spacing-20: 5rem;                /* 80px */
+
+  /* ---------- 12. MOTION ---------- */
+  --edz-transition: .25s ease;
+
+  /* ---------- 13. BOOTSTRAP 5.3 MAPPING (optional – delete if not needed) ---------- */
+  --bs-body-font-family: var(--edz-font-family-base);
+  --bs-body-color: var(--edz-text-body);
+  --bs-body-color-rgb: var(--edz-color-dark-rgb);
+  --bs-body-bg: var(--edz-bg-body);
+  --bs-heading-color: var(--edz-text-heading);
+  --bs-primary: var(--edz-color-primary);
+  --bs-primary-rgb: var(--edz-color-primary-rgb);
+  --bs-dark: var(--edz-color-dark);
+  --bs-dark-rgb: var(--edz-color-dark-rgb);
+  --bs-border-color: var(--edz-border-color);
+  --bs-border-width: var(--edz-border-width);
+  --bs-link-color: var(--edz-text-link);
+  --bs-link-hover-color: var(--edz-text-link-hover);
+}
+
+
+/* ---------- GLOBAL RESET & BASE ---------- */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+  font-family: var(--edz-font-family-base);
+  font-size: var(--edz-font-size-base);
+  font-weight: var(--edz-font-weight-normal);
+  line-height: var(--edz-line-height-normal);
+  color: var(--edz-text-body);
+  background-color: var(--edz-bg-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* ==========================================================================
+   EDZHI HOME – NAVBAR + HERO   (append to the shared style.css)
+   Uses only the edzhome- prefix and the edz- :root variables.
+   ========================================================================== */
+
+/* Shared local sizes */
+.edzhome-header,
+.edzhome-hero { --edzhome-nav-h: 4.75rem; }
+
+/* ---------- Buttons ---------- */
+.edzhome-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  border: 0; border-radius: var(--edz-radius-full);
+  font-weight: var(--edz-font-weight-bold); line-height: 1.2;
+  transition: background-color var(--edz-transition), transform var(--edz-transition), box-shadow var(--edz-transition);
+}
+.edzhome-btn:focus-visible { outline: 3px solid var(--edz-color-dark); outline-offset: 3px; }
+.edzhome-btn .bi { transition: transform var(--edz-transition); }
+.edzhome-btn:hover .bi { transform: translate(2px, -2px); }
+
+.edzhome-btn--dark { padding: .7rem 1.4rem; background: var(--edz-color-dark); color: var(--edz-text-on-dark); }
+.edzhome-btn--dark .bi { color: var(--edz-color-primary); }
+.edzhome-btn--dark:hover { background: var(--edz-color-dark-hover); color: var(--edz-text-on-dark); transform: translateY(-1px); }
+
+.edzhome-btn--primary {
+  padding: 1rem 2rem; font-size: var(--edz-font-size-lg);
+  background: var(--edz-color-primary); color: var(--edz-color-dark);
+  box-shadow: 0 12px 24px -10px rgba(var(--edz-color-primary-rgb), .9);
+}
+.edzhome-btn--primary:hover {
+  background: var(--edz-color-primary-hover); color: var(--edz-color-dark);
+  transform: translateY(-3px); box-shadow: 0 18px 30px -12px rgba(var(--edz-color-primary-rgb), 1);
+}
+
+/* ---------- Navbar ---------- */
+.edzhome-header {
+  background: transparent; border-bottom: 1px solid transparent;
+  transition: background-color .3s ease, box-shadow .3s ease, border-color .3s ease, backdrop-filter .3s ease;
+}
+/* Scrolled state (class toggled by JS after 30px) */
+.edzhome-header.edzhome-is-scrolled {
+  background: rgba(255, 250, 235, .88);
+  background: color-mix(in srgb, var(--edz-bg-body) 88%, transparent);
+  -webkit-backdrop-filter: blur(14px) saturate(1.3); backdrop-filter: blur(14px) saturate(1.3);
+  border-bottom-color: var(--edz-border-color-soft);
+  box-shadow: 0 8px 24px -12px rgba(var(--edz-color-dark-rgb), .18);
+}
+.edzhome-navbar { padding: 0; }
+.edzhome-navbar > .container { min-height: var(--edzhome-nav-h); }
+
+/* Logo wrapper: fixed box, image never changes the navbar height */
+.edzhome-navbar__brand { margin: 0; padding: 0; }
+.edzhome-navbar__logo { display: block; width: 9rem; height: 2.25rem; }
+.edzhome-navbar__logo img { width: 100%; height: 100%; object-fit: contain; object-position: left center; display: block; }
+
+/* Toggler: icon swaps by aria-expanded */
+.edzhome-navbar__toggler {
+  padding: .35rem .6rem; border: var(--edz-border); border-radius: var(--edz-radius-tile);
+  color: var(--edz-color-dark); font-size: 1.5rem; line-height: 1; box-shadow: none !important;
+}
+.edzhome-navbar__toggler:focus-visible { outline: 3px solid var(--edz-color-primary); outline-offset: 2px; }
+.edzhome-navbar__icon-close,
+.edzhome-navbar__toggler[aria-expanded="true"] .edzhome-navbar__icon-open { display: none; }
+.edzhome-navbar__toggler[aria-expanded="true"] .edzhome-navbar__icon-close { display: inline-block; }
+
+/* Links */
+.edzhome-navbar .navbar-nav .nav-link {
+  position: relative; padding: .5rem 1rem; color: var(--edz-text-heading);
+  font-weight: var(--edz-font-weight-semibold); transition: color var(--edz-transition);
+}
+.edzhome-navbar .navbar-nav .nav-link::after {
+  content: ""; position: absolute; left: 1rem; right: 1rem; bottom: .2rem; height: 2px;
+  background: var(--edz-color-primary); transform: scaleX(0); transform-origin: left;
+  transition: transform var(--edz-transition);
+}
+.edzhome-navbar .navbar-nav .nav-link:hover,
+.edzhome-navbar .navbar-nav .nav-link:focus-visible { color: var(--edz-text-link-hover); }
+.edzhome-navbar .navbar-nav .nav-link:hover::after,
+.edzhome-navbar .navbar-nav .nav-link:focus-visible::after { transform: scaleX(1); }
+
+.edzhome-navbar__actions { display: flex; align-items: center; gap: var(--edz-spacing-4); }
+.edzhome-navbar__login { font-weight: var(--edz-font-weight-semibold); color: var(--edz-text-heading); transition: color var(--edz-transition); }
+.edzhome-navbar__login:hover { color: var(--edz-text-link-hover); }
+
+/* Desktop: brand | centered menu | actions */
+@media (min-width: 992px) {
+  .edzhome-navbar > .container { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; }
+  .edzhome-navbar .edzhome-navbar__collapse { display: contents !important; }
+  .edzhome-navbar__actions { justify-self: end; }
+}
+/* Mobile: menu opens as a themed card */
+@media (max-width: 991.98px) {
+  .edzhome-navbar__collapse {
+    margin-bottom: var(--edz-spacing-4); padding: .75rem 1rem 1rem;
+    background: var(--edz-bg-surface); border: var(--edz-border);
+    border-radius: var(--edz-radius-card); box-shadow: var(--edz-shadow-dark-sm);
+  }
+  .edzhome-navbar .navbar-nav .nav-link { padding: .65rem 0; }
+  .edzhome-navbar .navbar-nav .nav-link::after { left: 0; right: auto; width: 2rem; }
+  .edzhome-navbar__actions { flex-direction: column; align-items: stretch; margin-top: var(--edz-spacing-3); text-align: center; }
+}
+
+/* ---------- Hero ---------- */
+.edzhome-hero {
+  --edzhome-accent: var(--edz-color-primary);   /* theme colour for the 2 accent lines */
+  position: relative; isolation: isolate; overflow-x: clip;
+  padding: calc(var(--edzhome-nav-h) + var(--edz-spacing-8)) 0 var(--edz-spacing-16);
+}
+/* Soft grid + glow background (decorative) */
+.edzhome-hero::before, .edzhome-hero::after { content: ""; position: absolute; z-index: -1; pointer-events: none; }
+.edzhome-hero::before {
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(var(--edz-color-dark-rgb), .045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--edz-color-dark-rgb), .045) 1px, transparent 1px);
+  background-size: 64px 64px;
+  -webkit-mask-image: linear-gradient(#000 40%, transparent); mask-image: linear-gradient(#000 40%, transparent);
+}
+.edzhome-hero::after {
+  top: -10%; right: -10%; width: 60%; height: 80%;
+  background: radial-gradient(circle, rgba(var(--edz-color-primary-rgb), .28), transparent 65%);
+}
+
+.edzhome-hero__title {
+  margin-bottom: var(--edz-spacing-6);
+  font-size: var(--edz-font-size-7xl); font-weight: var(--edz-font-weight-extrabold);
+  line-height: 1.08; letter-spacing: var(--edz-letter-spacing-tight); color: var(--edz-text-heading);
+}
+.edzhome-hero__line { display: block; }
+.edzhome-hero__accent {   background: linear-gradient(90deg, var(--edz-color-primary-hover), var(--edz-text-eyebrow));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;}
+.edzhome-hero__text {
+  max-width: 34rem; margin-bottom: var(--edz-spacing-8);
+  font-size: var(--edz-font-size-lg); line-height: var(--edz-line-height-relaxed); color: var(--edz-text-muted);
+}
+.edzhome-hero__text strong { color: var(--edz-text-heading); }
+@media (max-width: 575.98px) { .edzhome-btn--primary { width: 100%; } }
+
+/* ---------- Social proof ---------- */
+.edzhome-proof { display: flex; flex-wrap: wrap; align-items: center; gap: var(--edz-spacing-4); margin-top: var(--edz-spacing-8); }
+.edzhome-proof__avatars { display: flex; }
+.edzhome-proof__avatar {
+  display: grid; place-items: center; width: 2.5rem; height: 2.5rem;
+  border: 2px solid var(--edz-bg-body); border-radius: var(--edz-radius-circle);
+  font-size: var(--edz-font-size-xs); font-weight: var(--edz-font-weight-bold);
+  box-shadow: 0 4px 10px -2px rgba(var(--edz-color-dark-rgb), .25);
+}
+.edzhome-proof__avatar + .edzhome-proof__avatar { margin-left: -.75rem; }
+.edzhome-proof__avatar--1 { background: var(--edz-color-primary); color: var(--edz-color-dark); }
+.edzhome-proof__avatar--2 { background: var(--edz-color-dark); color: var(--edz-color-primary); }
+.edzhome-proof__avatar--3 { background: var(--edz-bg-soft); color: var(--edz-text-eyebrow); }
+.edzhome-proof__avatar--4 { background: var(--edz-bg-white); color: var(--edz-color-dark); }
+.edzhome-proof__stars { display: flex; gap: 2px; font-size: .9rem; color: var(--edz-color-primary-hover); }
+.edzhome-proof__text { margin: 0; font-size: var(--edz-font-size-sm); color: var(--edz-text-muted); }
+.edzhome-proof__text strong { color: var(--edz-text-heading); }
+
+/* ---------- Demo frame ---------- */
+.edzhome-demo { position: relative; padding-bottom: var(--edz-spacing-4); }
+.edzhome-demo__frame {
+  overflow: hidden; background: var(--edz-bg-surface); border: var(--edz-border);
+  border-radius: var(--edz-radius-card);
+  box-shadow: var(--edz-shadow-primary), 0 30px 60px -24px rgba(var(--edz-color-dark-rgb), .35);
+}
+.edzhome-demo__bar {
+  display: flex; align-items: center; gap: var(--edz-spacing-3);
+  padding: .75rem 1rem; border-bottom: var(--edz-border); background: var(--edz-bg-surface);
+}
+.edzhome-demo__dots { display: inline-flex; gap: .4rem; }
+.edzhome-demo__dots i { width: .75rem; height: .75rem; border-radius: var(--edz-radius-circle); background: #FF5F57; }
+.edzhome-demo__dots i:nth-child(2) { background: #FEBC2E; }
+.edzhome-demo__dots i:nth-child(3) { background: #28C840; }
+.edzhome-demo__title { font-size: var(--edz-font-size-sm); font-weight: var(--edz-font-weight-semibold); }
+.edzhome-demo__live {
+  display: inline-flex; align-items: center; gap: .4rem; margin-left: auto;
+  font-size: var(--edz-font-size-xs); font-weight: var(--edz-font-weight-semibold); color: #168a5c;
+}
+.edzhome-demo__live i { width: .5rem; height: .5rem; border-radius: var(--edz-radius-circle); background: #1fa971; }
+
+/* Media wrapper: fixed 16:10 box; backend media can never change its size */
+.edzhome-demo__media { --bs-aspect-ratio: 62.5%; background: var(--edz-color-dark); }
+.edzhome-demo__stage { overflow: hidden; background: var(--edz-color-dark); }
+.edzhome-demo__img,
+.edzhome-demo__video { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: cover; }
+.edzhome-demo__video:fullscreen { object-fit: contain; background: #000; }
+.edzhome-demo__video:-webkit-full-screen { object-fit: contain; background: #000; }
+
+/* Video helpers (JS adds .edzhome-has-video / .edzhome-is-fallback) */
+.edzhome-has-video { cursor: zoom-in; }
+.edzhome-demo__expand {
+  position: absolute; right: .75rem; bottom: .75rem; display: none; place-items: center;
+  width: 2.5rem; height: 2.5rem; border: 0; border-radius: var(--edz-radius-circle);
+  background: rgba(var(--edz-color-dark-rgb), .7); color: var(--edz-text-on-dark);
+  transition: background-color var(--edz-transition), transform var(--edz-transition);
+}
+.edzhome-demo__expand:hover { background: var(--edz-color-dark); transform: scale(1.08); }
+.edzhome-demo__expand:focus-visible { outline: 3px solid var(--edz-color-primary); outline-offset: 2px; }
+.edzhome-has-video .edzhome-demo__expand { display: grid; }
+
+.edzhome-demo__fallback {
+  position: absolute; inset: 0; display: none; flex-direction: column; align-items: center; justify-content: center;
+  gap: .35rem; padding: 1.5rem; text-align: center; color: var(--edz-text-on-dark); font-size: var(--edz-font-size-sm);
+  background: radial-gradient(circle at 85% 0, rgba(var(--edz-color-primary-rgb), .28), transparent 55%), var(--edz-color-dark);
+}
+.edzhome-demo__fallback strong { font-size: var(--edz-font-size-lg); font-weight: var(--edz-font-weight-bold); }
+.edzhome-demo__fallback > span:not(.edzhome-demo__play):not(.edzhome-demo__duration) { color: var(--edz-text-on-dark-muted); }
+.edzhome-is-fallback .edzhome-demo__fallback { display: flex; }
+.edzhome-is-fallback .edzhome-demo__expand { display: none; }
+.edzhome-demo__play {
+  display: grid; place-items: center; width: 4.5rem; height: 4.5rem; margin-bottom: .75rem;
+  border-radius: var(--edz-radius-circle); background: var(--edz-color-primary); color: var(--edz-color-dark);
+  font-size: 2.25rem; box-shadow: .35rem .35rem 0 var(--edz-bg-body);
+}
+.edzhome-demo__duration {
+  position: absolute; right: 1rem; bottom: 1rem; padding: .2rem .7rem; border-radius: var(--edz-radius-full);
+  background: var(--edz-bg-body); color: var(--edz-color-dark); font-size: var(--edz-font-size-xs); font-weight: var(--edz-font-weight-bold);
+}
+
+/* ---------- Floating notifications (desktop only) ---------- */
+.edzhome-note {
+  position: absolute; z-index: 3; display: none; align-items: center; gap: .75rem;
+  padding: .55rem 1rem .55rem .55rem; pointer-events: none;
+  background: var(--edz-bg-surface); border: var(--edz-border-width-thin) solid var(--edz-border-color-soft);
+  border-radius: var(--edz-radius-2xl); box-shadow: var(--edz-shadow-soft);
+  animation: edzhome-float 6s ease-in-out infinite;
+}
+.edzhome-note strong { display: block; font-size: var(--edz-font-size-sm); font-weight: var(--edz-font-weight-bold); line-height: 1.2; }
+.edzhome-note small { display: block; font-size: var(--edz-font-size-xs); color: var(--edz-text-muted); line-height: 1.2; }
+.edzhome-note__icon { display: grid; place-items: center; flex: none; width: 2.25rem; height: 2.25rem; border-radius: var(--edz-radius-circle); }
+.edzhome-note--lead { top: -1.5rem; right: 4.5rem; }
+.edzhome-note--lead .edzhome-note__icon { background: var(--edz-color-primary); color: var(--edz-color-dark); }
+.edzhome-note--ticket { bottom: -.5rem; left: -1.5rem; animation-delay: -2s; }
+.edzhome-note--ticket .edzhome-note__icon { background: var(--edz-color-dark); color: var(--edz-color-primary); }
+.edzhome-note--invoice { bottom: -.25rem; right: 2rem; animation-delay: -4s; }
+.edzhome-note--invoice .edzhome-note__icon { background: var(--edz-bg-soft); color: var(--edz-text-eyebrow); }
+@media (min-width: 992px) { .edzhome-note { display: flex; } }
+@keyframes edzhome-float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+@media (prefers-reduced-motion: reduce) {
+  .edzhome-note { animation: none; }
+  .edzhome-btn, .edzhome-btn .bi { transition: none; }
+}
+/* ==========================================================================
+   EDZHI HOME – TRUSTED BRANDS MARQUEE   (append to the shared style.css)
+   ========================================================================== */
+
+.edzhome-trust {
+  --edzhome-marquee-speed: 45s;                      /* one full loop; raise = slower */
+  --edzhome-brand-gap: clamp(1.25rem, 1rem + 3vw, 3.5rem);
+  padding: var(--edz-spacing-10) 0;
+  background: var(--edz-bg-soft);
+  border-top: var(--edz-border-width-thin) solid var(--edz-border-color-soft);
+  border-bottom: var(--edz-border-width-thin) solid var(--edz-border-color-soft);
+  overflow: hidden;                                  /* no horizontal page scroll */
+}
+
+/* Heading */
+.edzhome-trust__title {
+  margin: 0 0 var(--edz-spacing-8); padding: 0 var(--edz-spacing-4);
+  text-align: center; text-transform: uppercase;
+  font-size: var(--edz-font-size-xs); font-weight: var(--edz-font-weight-bold);
+  letter-spacing: .18em; line-height: var(--edz-line-height-normal);
+  color: var(--edz-text-muted);
+}
+@media (min-width: 768px) { .edzhome-trust__title { font-size: var(--edz-font-size-sm); } }
+
+/* Viewport of the marquee with soft left/right edge fade */
+.edzhome-marquee {
+  width: 100%; overflow: hidden;
+  -webkit-mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+          mask-image: linear-gradient(90deg, transparent, #000 10%, #000 90%, transparent);
+}
+
+/* Track = 2 identical groups; moving it by -50% = exactly one group → seamless loop */
+.edzhome-marquee__track {
+  display: flex; width: max-content;
+  animation: edzhome-marquee var(--edzhome-marquee-speed) linear infinite;
+  will-change: transform;
+}
+/* min-width 100vw: each group always fills the screen, so no blank gap on wide monitors */
+.edzhome-marquee__group {
+  display: flex; flex: 0 0 auto; align-items: center; justify-content: space-around;
+  min-width: 100vw; padding: 0;
+}
+@keyframes edzhome-marquee {
+  from { transform: translate3d(0, 0, 0); }
+  to   { transform: translate3d(-50%, 0, 0); }
+}
+
+/* Brand item: muted by default, dark on hover (marquee never pauses) */
+.edzhome-brand {
+  display: inline-flex; align-items: center; gap: .6rem; flex: none;
+  padding: 0 var(--edzhome-brand-gap); white-space: nowrap;
+  font-size: var(--edz-font-size-base); font-weight: var(--edz-font-weight-bold);
+  color: var(--edz-text-muted); opacity: .55;
+  transition: color var(--edz-transition), opacity var(--edz-transition);
+}
+.edzhome-brand .bi { font-size: 1.2em; line-height: 1; }
+.edzhome-brand:hover { color: var(--edz-color-dark); opacity: 1; }
+@media (min-width: 768px) { .edzhome-brand { font-size: var(--edz-font-size-lg); } }
+
+/* Reduced motion: static, wrapped, centered list (duplicate group hidden) */
+@media (prefers-reduced-motion: reduce) {
+  .edzhome-marquee { -webkit-mask-image: none; mask-image: none; }
+  .edzhome-marquee__track { width: 100%; animation: none; }
+  .edzhome-marquee__group { flex-wrap: wrap; justify-content: center; min-width: 0; row-gap: var(--edz-spacing-4); }
+  .edzhome-marquee__group[aria-hidden="true"] { display: none; }
+}
+
+/* ==========================================================================
+   EDZHI HOME – JOURNEY + FUNNEL + PIPELINE   (append to the shared style.css)
+   ========================================================================== */
+
+/* ---------- Shared section helpers ---------- */
+.edzhome-section { padding-block: clamp(3rem, 2rem + 4vw, 5rem); }
+.edzhome-eyebrow {
+  display: block; margin-bottom: var(--edz-spacing-2);
+  font-size: var(--edz-font-size-xs); font-weight: var(--edz-font-weight-bold);
+  letter-spacing: .14em; text-transform: uppercase; color: var(--edz-text-eyebrow);
+}
+.edzhome-title {
+  margin: 0 0 clamp(2rem, 1.5rem + 2vw, 3rem);
+  font-size: var(--edz-font-size-5xl); font-weight: var(--edz-font-weight-bold);
+  line-height: 1.15; letter-spacing: var(--edz-letter-spacing-tight);
+}
+
+/* ==========================================================================
+   1. JOURNEY (dark)
+   ========================================================================== */
+.edzhome-journey { --edzhome-dot: clamp(2.5rem, 1.2rem + 4vw, 3.75rem); background: var(--edz-bg-dark); color: var(--edz-text-on-dark); }
+.edzhome-journey .edzhome-eyebrow { color: var(--edz-color-primary); }
+.edzhome-journey .edzhome-title { color: var(--edz-text-on-dark); }
+
+/* Timeline: each li draws the connector to the next circle, so the line stays behind the dots */
+.edzhome-steps { display: flex; margin: 0 0 clamp(2.5rem, 2rem + 3vw, 4rem); padding: 0; list-style: none; }
+.edzhome-step {
+  position: relative; display: flex; flex: 1 1 0; flex-direction: column; align-items: center;
+  gap: .75rem; min-width: 0; text-align: center;
+}
+.edzhome-step:not(:last-child)::after {
+  content: ""; position: absolute; top: calc(var(--edzhome-dot) / 2 - 1.5px); left: 50%;
+  width: 100%; height: 3px; background: var(--edz-color-primary);
+}
+.edzhome-step__dot {
+  position: relative; z-index: 1; display: grid; place-items: center;
+  width: var(--edzhome-dot); height: var(--edzhome-dot); border-radius: var(--edz-radius-circle);
+  background: var(--edz-color-primary); color: var(--edz-color-dark);
+  font-size: calc(var(--edzhome-dot) * .38); font-weight: var(--edz-font-weight-extrabold); line-height: 1;
+  box-shadow: 0 0 0 5px rgba(var(--edz-color-primary-rgb), .14);
+  transition: transform var(--edz-transition), box-shadow var(--edz-transition);
+}
+.edzhome-step:hover .edzhome-step__dot { transform: scale(1.06); box-shadow: 0 0 0 8px rgba(var(--edz-color-primary-rgb), .2); }
+.edzhome-step__dot--cert { background: var(--edz-bg-body); }
+.edzhome-step__label {
+  font-size: clamp(.625rem, .5rem + .6vw, .875rem); font-weight: var(--edz-font-weight-bold);
+  line-height: 1.2; overflow-wrap: anywhere;
+}
+
+/* Phones: vertical timeline */
+@media (max-width: 575.98px) {
+  .edzhome-steps { flex-direction: column; align-items: flex-start; width: fit-content; margin-inline: auto; }
+  .edzhome-step { flex: none; flex-direction: row; gap: 1rem; padding-bottom: 1.5rem; text-align: left; }
+  .edzhome-step:last-child { padding-bottom: 0; }
+  .edzhome-step:not(:last-child)::after {
+    top: calc(var(--edzhome-dot) / 2); left: calc(var(--edzhome-dot) / 2 - 1.5px); width: 3px; height: 100%;
+  }
+  .edzhome-step__label { font-size: var(--edz-font-size-base); }
+}
+
+/* Info cards (Bootstrap .card restyled via its own variables) */
+.edzhome-jcard {
+  --bs-card-bg: transparent; --bs-card-color: var(--edz-text-on-dark-muted);
+  --bs-card-border-color: var(--edz-color-primary); --bs-card-border-width: 1.5px;
+  --bs-card-border-radius: .75rem; --bs-card-spacer-y: 1.25rem; --bs-card-spacer-x: 1.25rem;
+  background-image: linear-gradient(145deg, rgba(var(--edz-color-primary-rgb), .12), rgba(var(--edz-color-primary-rgb), .03));
+  transition: transform var(--edz-transition), box-shadow var(--edz-transition);
+}
+.edzhome-jcard:hover { transform: translateY(-3px); box-shadow: 0 14px 28px -14px rgba(var(--edz-color-primary-rgb), .55); }
+.edzhome-jcard__title { margin: 0 0 .35rem; font-size: var(--edz-font-size-lg); font-weight: var(--edz-font-weight-bold); color: var(--edz-color-primary); }
+.edzhome-jcard__text { margin: 0; font-size: var(--edz-font-size-sm); line-height: var(--edz-line-height-normal); }
+
+/* ==========================================================================
+   2. FUNNEL (cream)
+   ========================================================================== */
+.edzhome-funnel-sec .edzhome-eyebrow { color: var(--edz-text-eyebrow); }
+.edzhome-funnel { margin: 0; padding: 0; list-style: none; }
+.edzhome-funnel > li + li { margin-top: .75rem; }
+
+.edzhome-funnel__bar {
+  display: block; width: var(--edzhome-w); margin-inline: auto; padding: .7rem 1rem;
+  border-radius: .625rem; background: var(--edzhome-bg); color: var(--edz-color-dark);
+  font-weight: var(--edz-font-weight-bold); text-align: center;
+  box-shadow: 0 8px 16px -10px rgba(var(--edz-color-dark-rgb), .45);
+  transition: transform var(--edz-transition), box-shadow var(--edz-transition);
+}
+.edzhome-funnel__bar:hover { transform: translateY(-2px); box-shadow: 0 12px 20px -10px rgba(var(--edz-color-dark-rgb), .5); }
+/* Width narrows and colour deepens stage by stage */
+.edzhome-funnel__bar--1 { --edzhome-w: 100%; --edzhome-bg: #FFD557; }
+.edzhome-funnel__bar--2 { --edzhome-w: 91%;  --edzhome-bg: #FFCE45; }
+.edzhome-funnel__bar--3 { --edzhome-w: 82%;  --edzhome-bg: #FFC72C; }
+.edzhome-funnel__bar--4 { --edzhome-w: 73%;  --edzhome-bg: #F7BD1A; }
+.edzhome-funnel__bar--5 { --edzhome-w: 64%;  --edzhome-bg: #EDB114; }
+.edzhome-funnel__bar--6 { --edzhome-w: 55%;  --edzhome-bg: #D9A00A; }
+.edzhome-funnel__bar--7 { --edzhome-w: 46%;  --edzhome-bg: var(--edz-color-dark); color: var(--edz-color-primary); }
+.edzhome-funnel__desc { margin: 0; font-size: var(--edz-font-size-sm); color: var(--edz-text-muted); text-align: center; }
+@media (max-width: 767.98px) { .edzhome-funnel__bar { width: max(var(--edzhome-w), 60%); } }
+@media (min-width: 768px) { .edzhome-funnel__desc { text-align: left; font-size: var(--edz-font-size-base); } }
+
+/* ==========================================================================
+   3. PIPELINE (cream)
+   ========================================================================== */
+.edzhome-pipe-sec .edzhome-eyebrow { color: var(--edz-text-eyebrow); }
+.edzhome-pipe__head {
+  display: block; margin: 0; padding: .45rem .85rem; border-radius: .5rem;
+  background: var(--edz-color-primary); color: var(--edz-color-dark);
+  font-size: var(--edz-font-size-sm); font-weight: var(--edz-font-weight-bold);
+}
+.edzhome-pipe__head--done { background: var(--edz-color-dark); color: var(--edz-text-on-dark); }
+.edzhome-pipe__list { display: grid; gap: .6rem; margin: .75rem 0 0; padding: 0; list-style: none; }
+.edzhome-pipe__item {
+  padding: .55rem .85rem; border: var(--edz-border); border-radius: .5rem; background: var(--edz-bg-surface);
+  font-size: var(--edz-font-size-sm); font-weight: var(--edz-font-weight-medium);
+  transition: transform var(--edz-transition), box-shadow var(--edz-transition);
+}
+.edzhome-pipe__item:hover { transform: translate(-2px, -2px); box-shadow: 3px 3px 0 var(--edz-color-primary); }
+
+.edzhome-feature { padding-top: var(--edz-spacing-4); border-top: 2px solid var(--edz-color-primary); }
+.edzhome-feature__title { margin: 0 0 .35rem; font-size: var(--edz-font-size-lg); font-weight: var(--edz-font-weight-bold); }
+.edzhome-feature__text { margin: 0; font-size: var(--edz-font-size-sm); color: var(--edz-text-muted); }
+@media (min-width: 768px) { .edzhome-pipe__head, .edzhome-pipe__item { font-size: var(--edz-font-size-base); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .edzhome-step__dot, .edzhome-jcard, .edzhome-funnel__bar, .edzhome-pipe__item { transition: none; }
+}
+
+/* ==========================================================================
+   EDZHI HOME – PRODUCT FEATURES   (append to the shared style.css)
+   Bootstrap nav-pills/tabs drive the switching. Reuses .edzhome-section and the .edzhome-btn base from earlier sections.
+   ========================================================================== */
+
+.edzhome-feat { background: var(--edz-bg-surface); }
+
+/* ---------- Pastel icon tints (icon box + card icons) ---------- */
+.edzhome-tint-1 { --edzhome-tint-bg: #FFF1BF; --edzhome-tint-fg: #8A6200; }  /* yellow */
+.edzhome-tint-2 { --edzhome-tint-bg: #DDF5EC; --edzhome-tint-fg: #0F8A63; }  /* mint */
+.edzhome-tint-3 { --edzhome-tint-bg: #EEE7FF; --edzhome-tint-fg: #6D3FD1; }  /* lavender */
+.edzhome-tint-4 { --edzhome-tint-bg: #FFE6DA; --edzhome-tint-fg: #C2410C; }  /* peach */
+.edzhome-tint-5 { --edzhome-tint-bg: #E1EEFF; --edzhome-tint-fg: #2563EB; }  /* sky */
+.edzhome-tint-6 { --edzhome-tint-bg: #FFE4EC; --edzhome-tint-fg: #D1245A; }  /* rose */
+.edzhome-ficon {
+  display: inline-grid; place-items: center; flex: none; width: 2.25rem; height: 2.25rem;
+  border-radius: .625rem; background: var(--edzhome-tint-bg); color: var(--edzhome-tint-fg);
+  font-size: 1rem; transition: transform var(--edz-transition);
+}
+
+/* ---------- Header ---------- */
+.edzhome-feat__head { max-width: 46rem; margin: 0 auto clamp(2rem, 1.5rem + 2.5vw, 3.5rem); }
+.edzhome-badge {
+  display: inline-flex; align-items: center; gap: .5rem; margin-bottom: var(--edz-spacing-4); padding: .4rem .95rem;
+  border-radius: var(--edz-radius-full); background: var(--edz-bg-soft); color: var(--edz-text-eyebrow);
+  font-size: var(--edz-font-size-xs); font-weight: var(--edz-font-weight-bold); letter-spacing: .14em; text-transform: uppercase;
+}
+.edzhome-feat__title {
+  margin: 0 0 var(--edz-spacing-4); font-size: clamp(2rem, 1.4rem + 3vw, 3.5rem);
+  font-weight: var(--edz-font-weight-extrabold); line-height: 1.12; letter-spacing: var(--edz-letter-spacing-tight);
+}
+.edzhome-feat__title-accent {
+  display: block;
+  background: linear-gradient(90deg, var(--edz-color-primary-hover), var(--edz-text-eyebrow));
+  -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent;
+}
+.edzhome-feat__sub { max-width: 38rem; margin: 0 auto; font-size: var(--edz-font-size-lg); line-height: var(--edz-line-height-relaxed); color: var(--edz-text-muted); }
+
+/* ---------- Small buttons (extend hero .edzhome-btn) ---------- */
+.edzhome-btn--sm { padding: .65rem 1.25rem; font-size: var(--edz-font-size-sm); }
+.edzhome-btn--outline { background: var(--edz-bg-white); color: var(--edz-color-dark); box-shadow: inset 0 0 0 1.5px rgba(var(--edz-color-dark-rgb), .22); }
+.edzhome-btn--outline:hover { background: var(--edz-bg-white); color: var(--edz-color-dark); box-shadow: inset 0 0 0 1.5px var(--edz-color-dark); transform: translateY(-2px); }
+
+/* ---------- Navigation: Bootstrap nav-pills (mobile-first = swipeable row) ---------- */
+.edzhome-fnav-wrap { display: flex; align-items: center; gap: .5rem; }
+.edzhome-fnav {
+  --bs-nav-link-color: var(--edz-text-muted); --bs-nav-link-hover-color: var(--edz-color-dark);
+  --bs-nav-pills-link-active-bg: var(--edz-bg-white); --bs-nav-pills-link-active-color: var(--edz-color-dark);
+  --bs-nav-pills-border-radius: var(--edz-radius-full);
+  position: relative; flex: 1 1 auto; min-width: 0; flex-wrap: nowrap; gap: .5rem; padding: .4rem;
+  overflow-x: auto; scroll-snap-type: x proximity; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+  background: var(--edz-bg-body); border: var(--edz-border-width-thin) solid var(--edz-border-color-soft); border-radius: var(--edz-radius-full);
+}
+.edzhome-fnav::-webkit-scrollbar { display: none; }
+.edzhome-fitem {
+  display: flex; align-items: center; gap: .55rem; flex: none; padding: .5rem .95rem .5rem .5rem;
+  white-space: nowrap; text-align: left; scroll-snap-align: center;
+  transition: background-color var(--edz-transition), color var(--edz-transition), box-shadow var(--edz-transition);
+}
+.edzhome-fitem__text { flex: 1; min-width: 0; line-height: 1.25; }
+.edzhome-fitem strong { display: block; font-size: var(--edz-font-size-sm); font-weight: var(--edz-font-weight-semibold); }
+.edzhome-fitem small, .edzhome-fitem__chev { display: none; }
+.edzhome-fitem small { margin-top: .15rem; font-size: var(--edz-font-size-xs); color: var(--edz-text-muted); opacity: .85; }
+.edzhome-fitem__chev { font-size: .8rem; transition: transform var(--edz-transition); }
+.edzhome-fitem:hover { background: rgba(var(--edz-color-dark-rgb), .045); }
+.edzhome-fitem:hover .edzhome-ficon { transform: scale(1.07); }
+.edzhome-fitem:focus-visible { outline: 3px solid var(--edz-color-primary); outline-offset: 2px; box-shadow: none; }
+.edzhome-fnav .edzhome-fitem.active { box-shadow: 0 6px 16px -8px rgba(var(--edz-color-dark-rgb), .28), 0 0 0 1px var(--edz-border-color-soft); }
+.edzhome-fitem.active small { opacity: 1; }
+.edzhome-fitem.active .edzhome-fitem__chev { transform: rotate(90deg); }  /* right → down */
+
+/* Previous / Next arrows (small screens). Disabled at the ends, hidden when nothing overflows */
+.edzhome-fnav-btn {
+  display: grid; place-items: center; flex: none; width: 2.75rem; height: 2.75rem; padding: 0;
+  border: var(--edz-border-width-thin) solid var(--edz-border-color-soft); border-radius: var(--edz-radius-circle);
+  background: var(--edz-bg-white); color: var(--edz-color-dark); box-shadow: 0 4px 10px -6px rgba(var(--edz-color-dark-rgb), .35);
+  transition: background-color var(--edz-transition), opacity var(--edz-transition), transform var(--edz-transition);
+}
+.edzhome-fnav-btn:hover:not(:disabled) { background: var(--edz-color-primary); border-color: var(--edz-color-primary); transform: scale(1.05); }
+.edzhome-fnav-btn:disabled { opacity: .35; cursor: not-allowed; box-shadow: none; }
+.edzhome-fnav-btn:focus-visible { outline: 3px solid var(--edz-color-primary); outline-offset: 2px; }
+.edzhome-fnav-wrap.edzhome-no-overflow .edzhome-fnav-btn { display: none; }
+
+/* lg+: vertical sidebar, arrows off */
+@media (min-width: 992px) {
+  .edzhome-fnav-btn { display: none; }
+  .edzhome-fnav-wrap { display: block; }
+  .edzhome-fnav {
+    --bs-nav-pills-border-radius: var(--edz-radius-xl);
+    flex-direction: column; gap: .25rem; padding: .5rem; overflow: visible; border-radius: var(--edz-radius-card);
+  }
+  .edzhome-fitem { gap: .85rem; width: 100%; padding: .7rem .8rem; white-space: normal; }
+  .edzhome-fitem small { display: block; }
+  .edzhome-fitem__chev { display: inline-block; }
+}
+
+/* ---------- Detail panel ---------- */
+.edzhome-fpanel {
+  overflow: hidden; background: var(--edz-bg-white);
+  border: var(--edz-border-width-thin) solid var(--edz-border-color-soft); border-radius: var(--edz-radius-card);
+  box-shadow: 0 24px 48px -28px rgba(var(--edz-color-dark-rgb), .28);
+}
+.edzhome-fpanel__top { padding: clamp(1.25rem, 1rem + 1.5vw, 2rem); }
+.edzhome-tags { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 var(--edz-spacing-4); padding: 0; }
+.edzhome-tag {
+  padding: .25rem .8rem; border-radius: var(--edz-radius-full); background: var(--edz-bg-soft); color: var(--edz-text-eyebrow);
+  font-size: var(--edz-font-size-xs); font-weight: var(--edz-font-weight-semibold);
+}
+.edzhome-fpanel__title { margin: 0 0 .5rem; font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.125rem); font-weight: var(--edz-font-weight-bold); letter-spacing: var(--edz-letter-spacing-tight); }
+.edzhome-fpanel__desc { max-width: 38rem; margin: 0 0 var(--edz-spacing-5); color: var(--edz-text-muted); line-height: var(--edz-line-height-relaxed); }
+.edzhome-fpanel__actions { display: flex; flex-wrap: wrap; gap: .75rem; }
+.edzhome-fpanel__cards { padding: clamp(1.25rem, 1rem + 1.5vw, 2rem); border-top: var(--edz-border-width-thin) solid var(--edz-border-color-soft); }
+
+/* ---------- Feature cards ---------- */
+.edzhome-fcard {
+  height: 100%; padding: 1.15rem; background: var(--edz-bg-body);
+  border: var(--edz-border-width-thin) solid var(--edz-border-color-soft); border-radius: var(--edz-radius-xl);
+  transition: transform var(--edz-transition), box-shadow var(--edz-transition), border-color var(--edz-transition);
+}
+.edzhome-fcard:hover { transform: translateY(-3px); border-color: rgba(var(--edz-color-primary-rgb), .85); box-shadow: 0 14px 26px -16px rgba(var(--edz-color-dark-rgb), .3); }
+.edzhome-fcard:hover .edzhome-ficon { transform: scale(1.07); }
+.edzhome-fcard .edzhome-ficon { margin-bottom: .85rem; }
+.edzhome-fcard__title { margin: 0 0 .3rem; font-size: var(--edz-font-size-base); font-weight: var(--edz-font-weight-bold); }
+.edzhome-fcard__text { margin: 0; font-size: var(--edz-font-size-sm); line-height: var(--edz-line-height-normal); color: var(--edz-text-muted); }
+
+@media (max-width: 575.98px) {
+  .edzhome-fpanel__actions .btn { flex: 1 1 100%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .edzhome-ficon, .edzhome-fitem, .edzhome-fitem__chev, .edzhome-fcard, .edzhome-fnav-btn { transition: none; }
+}
+
+
+
+/* ==========================================================================
+   EDZHI HOME – WHY + INTEGRATIONS + PRICING   (append to the shared style.css)
+   Depends on: .edzhome-section, .edzhome-badge, .edzhome-btn(+--outline),
+   .edzhome-tint-1…6 (from the earlier section CSS).
+   ========================================================================== */
+
+/* ---------- Shared section header ---------- */
+.edzhome-head { max-width: 46rem; margin: 0 auto clamp(2rem, 1.5rem + 2.5vw, 3.5rem); }
+.edzhome-head__title {
+  margin: var(--edz-spacing-4) 0; font-size: clamp(2rem, 1.4rem + 3vw, 3.5rem);
+  font-weight: var(--edz-font-weight-extrabold); line-height: 1.12; letter-spacing: var(--edz-letter-spacing-tight);
+}
+.edzhome-head__sub { max-width: 38rem; margin: 0 auto; font-size: var(--edz-font-size-lg); line-height: var(--edz-line-height-relaxed); color: var(--edz-text-muted); }
+.edzhome-accent {
+  background: linear-gradient(90deg, var(--edz-color-primary-hover), var(--edz-text-eyebrow));
+  -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent;
+  -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+
+/* ---------- Shared icon box (colours come from a tint / brand variable) ---------- */
+.edzhome-icobox {
+  display: inline-grid; place-items: center; flex: none; width: 2.75rem; height: 2.75rem;
+  border-radius: .875rem; background: var(--edzhome-tint-bg, var(--edzhome-int-bg)); color: var(--edzhome-tint-fg, var(--edzhome-int-fg));
+  font-size: 1.25rem; transition: transform var(--edz-transition);
+}
+.edzhome-icobox--lg { width: 3rem; height: 3rem; font-size: 1.3rem; }
+.edzhome-btn--md { padding: .8rem 1.6rem; font-size: var(--edz-font-size-base); }
+
+/* ==========================================================================
+   1. WHY WE'RE DIFFERENT
+   ========================================================================== */
+.edzhome-why { background: var(--edz-bg-body); }
+.edzhome-wcard {
+  --bs-card-bg: var(--edz-bg-white); --bs-card-border-color: var(--edz-border-color-soft); --bs-card-border-radius: 1.5rem;
+  position: relative; padding: clamp(1.25rem, 1rem + 1vw, 1.75rem); overflow: hidden;
+  box-shadow: 0 1px 2px rgba(var(--edz-color-dark-rgb), .04);
+  transition: transform var(--edz-transition), box-shadow var(--edz-transition), border-color var(--edz-transition);
+}
+.edzhome-wcard:hover {
+  transform: translateY(-4px); border-color: rgba(var(--edz-color-primary-rgb), .9);
+  box-shadow: 0 20px 36px -22px rgba(var(--edz-color-dark-rgb), .35);
+}
+.edzhome-wcard .edzhome-icobox { align-self: flex-start; margin-bottom: 1.25rem; }
+.edzhome-wcard:hover .edzhome-icobox { transform: scale(1.06); }
+.edzhome-wcard__num {
+  position: absolute; top: .85rem; right: 1.4rem; font-size: clamp(2.25rem, 1.8rem + 1.5vw, 3.25rem);
+  font-weight: var(--edz-font-weight-extrabold); line-height: 1; color: rgba(var(--edz-color-dark-rgb), .07);
+  transition: color var(--edz-transition); pointer-events: none;
+}
+.edzhome-wcard:hover .edzhome-wcard__num { color: rgba(var(--edz-color-primary-rgb), .55); }
+.edzhome-wcard__title { margin: 0 0 .5rem; font-size: var(--edz-font-size-lg); font-weight: var(--edz-font-weight-bold); }
+.edzhome-wcard__text { margin: 0; font-size: var(--edz-font-size-sm); line-height: var(--edz-line-height-relaxed); color: var(--edz-text-muted); }
+
+/* Featured first card */
+.edzhome-wcard--featured {
+  --bs-card-bg: var(--edz-color-dark); --bs-card-border-color: var(--edz-color-dark);
+  background-image: radial-gradient(circle at 100% 0, rgba(var(--edz-color-primary-rgb), .25), transparent 55%);
+}
+.edzhome-wcard--featured:hover { border-color: var(--edz-color-primary); }
+.edzhome-wcard--featured .edzhome-icobox { --edzhome-tint-bg: rgba(255, 255, 255, .1); --edzhome-tint-fg: var(--edz-color-primary); }
+.edzhome-wcard--featured .edzhome-wcard__title { color: var(--edz-text-on-dark); }
+.edzhome-wcard--featured .edzhome-wcard__text { color: var(--edz-text-on-dark-muted); }
+
+/* ==========================================================================
+   2. INTEGRATIONS
+   ========================================================================== */
+.edzhome-int { background: var(--edz-bg-surface); }
+.edzhome-int .col { display: flex; }
+.edzhome-icard {
+  display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: center; gap: .75rem;
+  padding: 1.35rem .75rem; text-align: center; cursor: default;
+  background: var(--edz-bg-white); border: var(--edz-border-width-thin) solid var(--edz-border-color-soft); border-radius: 1.25rem;
+  transition: transform var(--edz-transition), box-shadow var(--edz-transition), border-color var(--edz-transition);
+}
+.edzhome-icard:hover {
+  transform: translateY(-3px); border-color: rgba(var(--edz-color-primary-rgb), .9);
+  box-shadow: 0 14px 26px -18px rgba(var(--edz-color-dark-rgb), .35);
+}
+.edzhome-icard:hover .edzhome-icobox { transform: scale(1.07); }
+.edzhome-icard__name { font-size: .8125rem; font-weight: var(--edz-font-weight-semibold); line-height: 1.3; }
+@media (min-width: 576px) { .edzhome-icard__name { font-size: var(--edz-font-size-sm); } }
+
+/* Brand-matched pastel icon colours */
+.edzhome-int--fb { --edzhome-int-bg: #E7F0FF; --edzhome-int-fg: #1877F2; }
+.edzhome-int--wa { --edzhome-int-bg: #E4F8EC; --edzhome-int-fg: #1FAF57; }
+.edzhome-int--gg { --edzhome-int-bg: #FFF4D6; --edzhome-int-fg: #4285F4; }
+.edzhome-int--im { --edzhome-int-bg: #E1F7E8; --edzhome-int-fg: #0E9F4A; }
+.edzhome-int--jd { --edzhome-int-bg: #FFE3F0; --edzhome-int-fg: #D6247A; }
+.edzhome-int--rz { --edzhome-int-bg: #E3ECFF; --edzhome-int-fg: #2563EB; }
+.edzhome-int--ig { --edzhome-int-bg: #F0E9FF; --edzhome-int-fg: #7C3AED; }
+.edzhome-int--em { --edzhome-int-bg: #FFEBDD; --edzhome-int-fg: #F97316; }
+.edzhome-int--mp { --edzhome-int-bg: #DDF5F0; --edzhome-int-fg: #0F9D8A; }
+.edzhome-int--sm { --edzhome-int-bg: #FFEFC2; --edzhome-int-fg: #D97706; }
+.edzhome-int--ti { --edzhome-int-bg: #DDF8E6; --edzhome-int-fg: #16A34A; }
+.edzhome-int--ai { --edzhome-int-bg: #FFE1EE; --edzhome-int-fg: #BE185D; }
+
+.edzhome-int__cta { margin-top: clamp(2rem, 1.5rem + 2vw, 3rem); }
+.edzhome-int__note { margin: 0 0 var(--edz-spacing-4); font-size: var(--edz-font-size-sm); color: var(--edz-text-muted); }
+
+/* ==========================================================================
+   3. PRICING
+   ========================================================================== */
+.edzhome-price { background: var(--edz-bg-body); }
+
+.edzhome-plan {
+  --edzhome-tint-bg: #FFE9A8; --edzhome-tint-fg: #8A6200;
+  --edzhome-check-bg: var(--edz-color-primary); --edzhome-check-fg: var(--edz-color-dark);
+  --edzhome-plan-hover: 0 0 0 2px var(--edz-color-primary), 0 28px 48px -18px rgba(var(--edz-color-primary-rgb), .8), 0 12px 24px -16px rgba(var(--edz-color-dark-rgb), .35);
+  position: relative; display: flex; flex-direction: column; height: 100%;
+  padding: clamp(1.25rem, 1rem + 1vw, 1.75rem); color: var(--edz-color-dark);
+  background: var(--edz-bg-surface); border: var(--edz-border-width-thin) solid var(--edz-border-color-soft); border-radius: 1.5rem;
+  box-shadow: 0 14px 30px -22px rgba(var(--edz-color-dark-rgb), .35);
+  transition: transform .35s cubic-bezier(.22, .61, .36, 1), box-shadow .35s ease, border-color .35s ease;
+}
+/* Premium hover: lift + yellow border ring + yellow glow shadow (ring is a box-shadow, so no layout shift) */
+.edzhome-plan:focus-within { transform: translateY(-8px); border-color: var(--edz-color-primary); box-shadow: var(--edzhome-plan-hover); }
+@media (hover: hover) {
+  .edzhome-plan:hover { transform: translateY(-8px); border-color: var(--edz-color-primary); box-shadow: var(--edzhome-plan-hover); }
+  .edzhome-plan:hover .edzhome-icobox { transform: scale(1.08) rotate(-4deg); }
+  .edzhome-plan--growth:hover { border-color: var(--edz-color-dark); }
+}
+.edzhome-plan__head { display: flex; align-items: center; gap: .9rem; }
+.edzhome-plan__name { margin: 0; font-size: var(--edz-font-size-xl); font-weight: var(--edz-font-weight-bold); line-height: 1.2; }
+.edzhome-plan__for { margin: .15rem 0 0; font-size: .8125rem; line-height: 1.3; color: var(--edz-text-muted); }
+.edzhome-plan__price { margin: 1.5rem 0 1.25rem; }
+.edzhome-plan__price strong { display: block; font-size: clamp(2.25rem, 1.9rem + 1.2vw, 2.75rem); font-weight: var(--edz-font-weight-extrabold); line-height: 1.1; letter-spacing: var(--edz-letter-spacing-tight); }
+.edzhome-plan__price span { display: block; margin-top: .35rem; font-size: var(--edz-font-size-sm); line-height: 1.45; color: var(--edz-text-muted); }
+
+/* Feature list grows to fill, so the Trial button always sits at the card bottom */
+.edzhome-plan__list { flex: 1 1 auto; margin: 0 0 1.5rem; padding: 1.1rem 0 0; list-style: none; border-top: var(--edz-border-width-thin) solid var(--edz-border-color-soft); }
+.edzhome-plan__list li { display: flex; align-items: flex-start; gap: .65rem; margin-bottom: .7rem; font-size: .9375rem; line-height: 1.35; }
+.edzhome-check {
+  display: grid; place-items: center; flex: none; width: 1.25rem; height: 1.25rem; margin-top: .05rem;
+  border-radius: var(--edz-radius-circle); background: var(--edzhome-check-bg); color: var(--edzhome-check-fg); font-size: .8rem;
+}
+.edzhome-plan__btn {
+  align-self: flex-start; padding: .65rem 1.5rem; border: 2px solid var(--edz-color-primary); background: transparent;
+  color: var(--edz-color-dark); font-size: var(--edz-font-size-base);
+}
+.edzhome-plan__btn:hover { background: var(--edz-color-primary); border-color: var(--edz-color-primary); color: var(--edz-color-dark); transform: translateY(-2px); }
+
+/* Growth: yellow gradient + highlighted border */
+.edzhome-plan--growth {
+  --edzhome-tint-bg: rgba(var(--edz-color-dark-rgb), .1); --edzhome-tint-fg: var(--edz-color-dark);
+  --edzhome-check-bg: var(--edz-color-dark); --edzhome-check-fg: var(--edz-color-primary);
+  background: linear-gradient(160deg, #FFD95E 0%, var(--edz-color-primary) 55%, #F7B912 100%);
+  border: 2px solid var(--edz-color-dark);
+}
+.edzhome-plan--growth .edzhome-plan__for, .edzhome-plan--growth .edzhome-plan__price span { color: rgba(var(--edz-color-dark-rgb), .72); }
+.edzhome-plan--growth .edzhome-plan__list { border-top-color: rgba(var(--edz-color-dark-rgb), .2); }
+.edzhome-plan--growth .edzhome-plan__btn { background: var(--edz-color-dark); border-color: var(--edz-color-dark); color: var(--edz-text-on-dark); }
+.edzhome-plan--growth .edzhome-plan__btn:hover { background: var(--edz-color-dark-hover); border-color: var(--edz-color-dark-hover); color: var(--edz-text-on-dark); }
+.edzhome-plan__badge {
+  position: absolute; top: -.85rem; right: 1.25rem; display: inline-flex; align-items: center; gap: .4rem;
+  padding: .35rem .85rem; border-radius: var(--edz-radius-full); background: var(--edz-color-dark); color: var(--edz-text-on-dark);
+  font-size: var(--edz-font-size-xs); font-weight: var(--edz-font-weight-bold); line-height: 1.2;
+}
+.edzhome-plan__badge .bi { color: var(--edz-color-primary); }
+
+/* Pro: black, white text, yellow icons */
+.edzhome-plan--pro {
+  --edzhome-tint-bg: var(--edz-color-dark-hover); --edzhome-tint-fg: var(--edz-color-primary);
+  background: var(--edz-color-dark); color: var(--edz-text-on-dark); border-color: var(--edz-color-dark);
+}
+.edzhome-plan--pro .edzhome-plan__for, .edzhome-plan--pro .edzhome-plan__price span { color: var(--edz-text-on-dark-muted); }
+.edzhome-plan--pro .edzhome-plan__list { border-top-color: rgba(255, 255, 255, .14); }
+.edzhome-plan--pro .edzhome-plan__btn { color: var(--edz-text-on-dark); }
+.edzhome-plan--pro .edzhome-plan__btn:hover { color: var(--edz-color-dark); }
+
+/* Tighter type on laptops where 4 cards share ~225px each */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .edzhome-plan { padding: 1.25rem; }
+  .edzhome-plan__list li { font-size: .875rem; }
+  .edzhome-plan__for { font-size: .75rem; }
+}
+@media (max-width: 575.98px) { .edzhome-plan__btn { align-self: stretch; justify-content: center; } }
+
+/* Benefits bar */
+.edzhome-benefits {
+  margin-top: clamp(1.5rem, 1rem + 2vw, 2.5rem); padding: 1.25rem clamp(1rem, .5rem + 2vw, 2rem);
+  background: var(--edz-color-dark); color: var(--edz-text-on-dark); border-radius: 1.5rem;
+}
+.edzhome-benefit { display: flex; align-items: center; gap: .85rem; height: 100%; font-size: .9375rem; font-weight: var(--edz-font-weight-semibold); line-height: 1.3; }
+.edzhome-benefit .bi { flex: none; font-size: 1.75rem; color: var(--edz-color-primary); }
+@media (min-width: 992px) {
+  .edzhome-benefit { padding-inline: 1.5rem; }
+  .edzhome-benefits .col + .col .edzhome-benefit { border-left: 1px solid rgba(var(--edz-color-primary-rgb), .35); }
+}
+.edzhome-price__note { margin: var(--edz-spacing-4) 0 0; text-align: center; font-size: var(--edz-font-size-sm); color: var(--edz-text-muted); }
+
+@media (prefers-reduced-motion: reduce) {
+  .edzhome-wcard, .edzhome-wcard__num, .edzhome-icobox, .edzhome-icard, .edzhome-plan { transition: none; }
+  .edzhome-plan:hover, .edzhome-plan:focus-within { transform: none; }
+}
+
+
+/* ==========================================================================
+   EDZHI HOME – COMPARISON TABLE   (append to the shared style.css)
+   Depends on: .edzhome-section, .edzhome-head*, .edzhome-badge, .edzhome-accent
+   ========================================================================== */
+
+.edzhome-cmpsec { background: var(--edz-bg-surface); }
+
+/* Rounded, shadowed card that clips the table corners */
+.edzhome-cmp {
+  overflow: hidden; background: var(--edz-bg-white);
+  border: var(--edz-border-width-thin) solid var(--edz-border-color-soft); border-radius: 1.5rem;
+  box-shadow: 0 24px 48px -28px rgba(var(--edz-color-dark-rgb), .3);
+}
+/* Horizontal scroll only: Bootstrap's overflow-x:auto makes y "auto" too, which traps page scrolling */
+.edzhome-cmp__scroll { overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; }
+.edzhome-cmp__scroll:focus-visible { outline: 3px solid var(--edz-color-primary); outline-offset: -3px; }
+
+/* Table base (Bootstrap .table, tuned by its own variables) */
+.edzhome-cmp__table {
+  --bs-table-bg: transparent; --bs-table-color: var(--edz-color-dark);
+  --bs-table-border-color: var(--edz-border-color-soft);
+  min-width: 42rem; table-layout: fixed; font-size: .8125rem;
+}
+.edzhome-cmp__table thead th:first-child { width: 28%; }
+.edzhome-cmp .table th, .edzhome-cmp .table td {
+  padding: .8rem .75rem; text-align: center; vertical-align: middle;
+  background-color: var(--edzhome-row-bg, var(--edz-bg-white));
+  transition: background-color var(--edz-transition);
+}
+@media (min-width: 768px) {
+  .edzhome-cmp__table { font-size: var(--edz-font-size-sm); }
+  .edzhome-cmp .table th, .edzhome-cmp .table td { padding: .95rem 1.25rem; }
+}
+
+/* Header row */
+.edzhome-cmp .table thead th {
+  --edzhome-row-bg: #FBF8F0; padding-block: 1.1rem; color: var(--edz-text-muted);
+  font-size: var(--edz-font-size-xs); font-weight: var(--edz-font-weight-bold); letter-spacing: .12em; text-transform: uppercase;
+}
+.edzhome-cmp .table thead th.edzhome-cmp__us { --edzhome-row-bg: var(--edz-color-primary); color: var(--edz-color-dark); }
+
+/* Section titles (CORE CRM …) */
+.edzhome-cmp__group { --edzhome-row-bg: #FAF6EA; }
+.edzhome-cmp .table .edzhome-cmp__group th {
+  text-align: left; padding-block: .7rem; font-size: .6875rem; font-weight: var(--edz-font-weight-bold);
+  letter-spacing: .14em; text-transform: uppercase; color: var(--edz-color-dark);
+}
+.edzhome-cmp__group .edzhome-cmp__label { position: sticky; left: 1.25rem; display: inline-block; }
+
+/* Feature column: left aligned and pinned while scrolling on small screens */
+.edzhome-cmp .table tbody tr:not(.edzhome-cmp__group) > th {
+  text-align: left; font-weight: var(--edz-font-weight-semibold); color: var(--edz-color-dark);
+}
+.edzhome-cmp .table thead th:first-child,
+.edzhome-cmp .table tbody tr:not(.edzhome-cmp__group) > th { position: sticky; left: 0; z-index: 1; text-align: left; }
+@media (max-width: 767.98px) {
+  .edzhome-cmp .table thead th:first-child,
+  .edzhome-cmp .table tbody tr:not(.edzhome-cmp__group) > th { box-shadow: 1px 0 0 var(--edz-border-color-soft); }
+}
+
+/* Row hover */
+.edzhome-cmp .table tbody tr:not(.edzhome-cmp__group):hover { --edzhome-row-bg: #FFF9E5; }
+
+/* EDZHICRM column: soft yellow tint on every body cell */
+.edzhome-cmp .table td.edzhome-cmp__us { background-image: linear-gradient(rgba(var(--edz-color-primary-rgb), .14), rgba(var(--edz-color-primary-rgb), .14)); }
+
+/* Cell content */
+.edzhome-cmp__yes { color: #1f9d55; font-size: 1.1rem; }
+.edzhome-cmp__no { color: #b8b2a3; font-size: .85rem; }
+.edzhome-cmp__text { color: var(--edz-text-muted); font-size: .8125rem; }
+.edzhome-cmp__price { color: var(--edz-text-eyebrow); font-weight: var(--edz-font-weight-bold); }
+.edzhome-cmp__good { color: #168a5c; font-weight: var(--edz-font-weight-bold); }
+
+@media (prefers-reduced-motion: reduce) { .edzhome-cmp .table th, .edzhome-cmp .table td { transition: none; } }
+
+
+/* ==========================================================================
+   EDZHI HOME – TESTIMONIALS + FAQ + FOOTER   (append to the shared style.css)
+   Depends on: .edzhome-section, .edzhome-head*, .edzhome-badge, .edzhome-accent,
+   .edzhome-tint-1…6 (from the earlier section CSS).
+   ========================================================================== */
+
+.edzhome-stars { display: inline-flex; gap: 2px; color: var(--edz-color-primary-hover); font-size: .85rem; }
+
+/* ==========================================================================
+   1. TESTIMONIALS – full-width auto-scrolling carousel
+   ========================================================================== */
+.edzhome-tsec { background: var(--edz-bg-white); overflow: hidden; }
+
+/* The scroller is a normal scroll container (so touch/trackpad swipe works); scrollbar hidden */
+.edzhome-tscroll {
+  --edzhome-t-gap: 1.25rem; --edzhome-t-w: min(85vw, 22rem);
+  overflow-x: auto; overflow-y: hidden; padding-block: 1.25rem 1.75rem;
+  scrollbar-width: none; overscroll-behavior-x: contain;
+}
+.edzhome-tscroll::-webkit-scrollbar { display: none; }
+.edzhome-tscroll:focus-visible { outline: 3px solid var(--edz-color-primary); outline-offset: -3px; }
+.edzhome-ttrack { display: flex; width: max-content; }
+.edzhome-tgroup { display: flex; gap: var(--edzhome-t-gap); padding-right: var(--edzhome-t-gap); }   /* gap after last card = seamless loop */
+@media (min-width: 576px) { .edzhome-tscroll { --edzhome-t-w: min(24rem, calc((100vw - 3 * var(--edzhome-t-gap)) / 2)); } }
+@media (min-width: 992px) { .edzhome-tscroll { --edzhome-t-w: min(26rem, calc((100vw - 4 * var(--edzhome-t-gap)) / 3)); } }
+
+/* Cards: same height (flex stretch), author always pinned to the bottom */
+.edzhome-tcard {
+  display: flex; flex: 0 0 var(--edzhome-t-w); flex-direction: column; padding: 1.5rem;
+  background: var(--edz-bg-body); border: var(--edz-border-width-thin) solid var(--edz-border-color-soft); border-radius: 1.25rem;
+  transition: transform .4s ease, box-shadow .4s ease, border-color .4s ease, background-color .4s ease;
+}
+.edzhome-tcard__quote { flex: 1 1 auto; margin: 1rem 0 1.5rem; }
+.edzhome-tcard__quote p { margin: 0; font-size: var(--edz-font-size-sm); font-style: italic; line-height: var(--edz-line-height-relaxed); color: var(--edz-color-dark-hover); }
+.edzhome-tcard__author { display: flex; align-items: center; gap: .75rem; margin-top: auto; }
+.edzhome-tcard__author strong { display: block; font-size: var(--edz-font-size-sm); font-weight: var(--edz-font-weight-bold); line-height: 1.25; }
+.edzhome-tcard__author small { display: block; font-size: var(--edz-font-size-xs); line-height: 1.3; color: var(--edz-text-muted); }
+.edzhome-avatar {
+  display: grid; place-items: center; flex: none; width: 2.5rem; height: 2.5rem; border-radius: var(--edz-radius-circle);
+  background: var(--edzhome-tint-bg); color: var(--edzhome-tint-fg); font-size: var(--edz-font-size-xs); font-weight: var(--edz-font-weight-bold);
+}
+/* Highlight: the card crossing the centre (JS adds the class) and any hovered card */
+.edzhome-tcard.edzhome-is-center, .edzhome-tcard:hover {
+  background: var(--edz-bg-white); border-color: var(--edz-color-primary); transform: translateY(-4px);
+  box-shadow: 0 20px 36px -22px rgba(var(--edz-color-primary-rgb), .9), 0 10px 24px -18px rgba(var(--edz-color-dark-rgb), .3);
+}
+
+/* Rating summary pill */
+.edzhome-rating {
+  display: inline-flex; align-items: center; gap: .85rem; padding: .6rem 1.5rem; text-align: left;
+  background: var(--edz-bg-body); border: var(--edz-border-width-thin) solid var(--edz-border-color-soft); border-radius: var(--edz-radius-full);
+}
+.edzhome-rating__score { font-size: 1.75rem; font-weight: var(--edz-font-weight-extrabold); line-height: 1; }
+.edzhome-rating small { display: block; margin-top: .15rem; font-size: .6875rem; color: var(--edz-text-muted); }
+
+/* ==========================================================================
+   2. FAQ – Bootstrap accordion, restyled through its variables
+   ========================================================================== */
+.edzhome-faq { background: var(--edz-bg-body); }
+.edzhome-faq__list {
+  --bs-accordion-bg: transparent; --bs-accordion-border-width: 0; --bs-accordion-inner-border-radius: 0;
+  --bs-accordion-btn-bg: transparent; --bs-accordion-btn-color: var(--edz-color-dark);
+  --bs-accordion-active-bg: transparent; --bs-accordion-active-color: var(--edz-color-dark);
+  --bs-accordion-btn-padding-x: 1.25rem; --bs-accordion-btn-padding-y: 1.1rem;
+  --bs-accordion-btn-focus-box-shadow: none;
+  display: grid; gap: .75rem;
+}
+.edzhome-faq .accordion-item {
+  overflow: hidden; background: var(--edz-bg-white); border: var(--edz-border-width-thin) solid var(--edz-border-color-soft); border-radius: 1rem;
+  transition: border-color var(--edz-transition), box-shadow var(--edz-transition);
+}
+.edzhome-faq .accordion-item:hover { border-color: rgba(var(--edz-color-primary-rgb), .9); box-shadow: 0 10px 22px -16px rgba(var(--edz-color-dark-rgb), .3); }
+.edzhome-faq .accordion-item:has(.accordion-button:not(.collapsed)) { border-color: var(--edz-color-primary); }
+.edzhome-faq .accordion-button {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  font-size: var(--edz-font-size-sm); font-weight: var(--edz-font-weight-bold); text-align: left; box-shadow: none;
+}
+.edzhome-faq .accordion-button::after { display: none; }                 /* replace Bootstrap's arrow with +/- */
+.edzhome-faq__icon {
+  display: grid; place-items: center; flex: none; width: 1.75rem; height: 1.75rem;
+  border: var(--edz-border-width-thin) solid var(--edz-border-color-soft); border-radius: var(--edz-radius-circle);
+  color: var(--edz-text-muted); transition: background-color var(--edz-transition), border-color var(--edz-transition), color var(--edz-transition);
+}
+.edzhome-faq .accordion-button.collapsed .bi-dash,
+.edzhome-faq .accordion-button:not(.collapsed) .bi-plus { display: none; }
+.edzhome-faq .accordion-button:not(.collapsed) .edzhome-faq__icon { background: var(--edz-color-primary); border-color: var(--edz-color-primary); color: var(--edz-color-dark); }
+.edzhome-faq .accordion-button:focus-visible { outline: 3px solid var(--edz-color-primary); outline-offset: -3px; }
+.edzhome-faq .accordion-body { padding: 0 1.25rem 1.25rem; font-size: var(--edz-font-size-sm); line-height: 1.7; color: var(--edz-text-muted); }
+
+/* ==========================================================================
+   3. FOOTER
+   ========================================================================== */
+.edzhome-footer {
+  padding: clamp(3rem, 2rem + 3vw, 4.5rem) 0 1.5rem; background: var(--edz-bg-surface);
+  border-top: var(--edz-border-width-thin) solid var(--edz-border-color-soft);
+}
+.edzhome-footer__logo { display: block; width: 9rem; height: 2.25rem; margin-bottom: 1rem; }
+.edzhome-footer__logo img { display: block; width: 100%; height: 100%; object-fit: contain; object-position: left center; }
+.edzhome-footer__about { max-width: 20rem; margin: 0 0 1.25rem; font-size: var(--edz-font-size-sm); line-height: 1.7; color: var(--edz-text-muted); }
+.edzhome-iso {
+  display: inline-flex; align-items: center; gap: .4rem; padding: .3rem .75rem; border: 1px solid #bfe8cf; border-radius: var(--edz-radius-full);
+  background: #e3f6ea; color: #168a5c; font-size: .6875rem; font-weight: var(--edz-font-weight-bold);
+}
+.edzhome-footer__social { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1.25rem; }
+.edzhome-social {
+  display: grid; place-items: center; width: 2.25rem; height: 2.25rem; border: var(--edz-border-width-thin) solid var(--edz-border-color-soft);
+  border-radius: .625rem; background: var(--edz-bg-white); color: var(--edz-text-muted); font-size: .95rem;
+  transition: background-color var(--edz-transition), border-color var(--edz-transition), color var(--edz-transition), transform var(--edz-transition);
+}
+.edzhome-social:hover { background: var(--edz-color-primary); border-color: var(--edz-color-primary); color: var(--edz-color-dark); transform: translateY(-2px); }
+.edzhome-social:focus-visible, .edzhome-footer a:focus-visible { outline: 3px solid var(--edz-color-primary); outline-offset: 2px; }
+
+.edzhome-footer__title { margin: 0 0 1rem; font-size: .75rem; font-weight: var(--edz-font-weight-bold); letter-spacing: .14em; text-transform: uppercase; color: var(--edz-color-dark); }
+.edzhome-footer__links { margin: 0; padding: 0; }
+.edzhome-footer__links li { margin-bottom: .35rem; }
+/* Links: an underline draws in from the left on hover */
+.edzhome-footer__links a, .edzhome-footer__legal a {
+  display: inline-block; padding-block: .2rem; color: var(--edz-text-muted); font-size: var(--edz-font-size-sm);
+  background: linear-gradient(currentColor, currentColor) left bottom / 0 1px no-repeat;
+  transition: background-size .3s ease, color .3s ease;text-decoration: none;
+}
+.edzhome-footer__links a:hover, .edzhome-footer__legal a:hover { color: var(--edz-color-dark); background-size: 100% 1px; }
+
+.edzhome-footer__bar {
+  display: flex; flex-direction: column; align-items: center; gap: .75rem; text-align: center;
+  margin-top: clamp(2rem, 1.5rem + 2vw, 3rem); padding-top: 1.25rem; border-top: var(--edz-border-width-thin) solid var(--edz-border-color-soft);
+}
+.edzhome-footer__copy { margin: 0; font-size: .8125rem; color: var(--edz-text-muted); }
+.edzhome-footer__heart { color: #e5484d; }
+.edzhome-footer__legal { display: flex; flex-wrap: wrap; justify-content: center; gap: .25rem 1.25rem; margin: 0; padding: 0; }
+.edzhome-footer__legal a { font-size: .8125rem; }
+@media (min-width: 768px) {
+  .edzhome-footer__bar { flex-direction: row; justify-content: space-between; text-align: left; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .edzhome-tcard, .edzhome-faq .accordion-item, .edzhome-faq__icon, .edzhome-social { transition: none; }
+  .edzhome-social:hover, .edzhome-tcard:hover, .edzhome-tcard.edzhome-is-center { transform: none; }
+}
+
+
+/* ==========================================================================
+   EDZHI – SCROLL REVEAL   (append at the very END of edzhi.css)
+   Elements are tagged by edzhome-scroll-reveal.js, so no HTML changes are needed.
+   Only opacity + `translate` animate (GPU-friendly; hover `transform` effects keep working).
+   Without JavaScript nothing is hidden. Disabled for "reduce motion".
+   Tune: distance (24px), duration (.7s) below.
+   ========================================================================== */
+.edzhome-rv {
+  opacity: 0;
+  translate: 0 24px;
+  transition: opacity .7s cubic-bezier(.22, .61, .36, 1), translate .7s cubic-bezier(.22, .61, .36, 1);
+  transition-delay: var(--edzhome-rv-d, 0ms);
+}
+.edzhome-rv.edzhome-in { opacity: 1; translate: 0 0; }
+
+@media (prefers-reduced-motion: reduce) {
+  .edzhome-rv { opacity: 1; translate: none; transition: none; }
+}
