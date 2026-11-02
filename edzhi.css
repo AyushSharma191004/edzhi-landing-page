@@ -1111,7 +1111,7 @@ body {
 
 /* ---------- Form card ---------- */
 .edzhome-contact__card {
-  position: relative; overflow: hidden; padding: clamp(1.5rem, 1rem + 2.5vw, 2.75rem);
+  position: relative; overflow: hidden; padding: clamp(1.5rem, 1rem + 2.5vw, 2.5rem);
   background: var(--edz-bg-surface); border: var(--edz-border-width-thin) solid var(--edz-border-color-soft); border-radius: 1.75rem;
   box-shadow: 0 30px 60px -34px rgba(var(--edz-color-dark-rgb), .35);
 }
@@ -1120,7 +1120,7 @@ body {
   background: linear-gradient(90deg, var(--edz-color-dark) 0 62%, var(--edz-color-primary) 62% 100%);
 }
 .edzhome-contact__formtitle {
-  display: flex; align-items: center; gap: .85rem; margin: .5rem 0 1.5rem;
+  display: flex; align-items: center; gap: .85rem; margin: 0rem 0 0.9rem;
   font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.125rem); font-weight: var(--edz-font-weight-extrabold); letter-spacing: var(--edz-letter-spacing-tight);
 }
 .edzhome-contact__formtitle::before { content: ""; flex: none; width: .4rem; height: 1.9rem; border-radius: var(--edz-radius-full); background: var(--edz-color-primary); }
