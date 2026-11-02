@@ -14,6 +14,21 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
   <!-- Shared project stylesheet (:root variables + base + edzhome- styles) -->
   <link href="./edzhi.css" rel="stylesheet">
+  <style>
+    .nav-logo {
+        font-size: 1.7rem;
+    font-weight: 900;
+    letter-spacing: -.03em;
+    color: var(--edz-color-dark);
+    }
+    .nav-logo span {
+    color: var(--edz-text-eyebrow);
+}
+    .nav-logo em {
+    color: var(--edz-color-primary);
+    font-style: normal;
+}
+  </style>
 </head>
 <body>
 
@@ -24,7 +39,9 @@
 
       <!-- Brand: logo sits in a fixed wrapper so any backend logo keeps the layout -->
       <a class="navbar-brand edzhome-navbar__brand" href="/" aria-label="EDZHICRM home">
-        <span class="edzhome-navbar__logo"><img src="img.png" alt="EDZHICRM"></span>
+        <!-- <span class="edzhome-navbar__logo"><img src="img.png" alt="EDZHICRM"></span> -->
+         <div class="nav-logo">EDZHI<span>C</span><em>R</em>M</div>
+         
       </a>
 
       <!-- Mobile toggler (icon swaps via aria-expanded, no JS) -->
@@ -1090,7 +1107,8 @@
 
       <!-- Brand column -->
       <div class="col-12 col-lg-4">
-        <a class="edzhome-footer__logo" href="/" aria-label="EDZHICRM home"><img src="logo.png" alt="EDZHICRM"></a>
+        <!-- <a class="edzhome-footer__logo" href="/" aria-label="EDZHICRM home"><img src="logo.png" alt="EDZHICRM"></a> -->
+            <a class="edzhome-footer__logo" href="/" aria-label="EDZHICRM home" style="text-decoration: none;"> <div class="nav-logo">EDZHI<span>C</span><em>R</em>M</div></a>
         <p class="edzhome-footer__about">All-in-one business CRM combining lead management, field force GPS tracking, invoicing, helpdesk and AI automation.</p>
         <span class="edzhome-iso"><i class="bi bi-shield-fill-check" aria-hidden="true"></i>ISO 27001 Certified</span>
         <div class="edzhome-footer__social">
