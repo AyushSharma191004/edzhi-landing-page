@@ -645,7 +645,8 @@
     <!-- 1 col phones · 2 cols tablets · 3 cols desktop; h-100 = equal heights -->
     <div class="row g-3 g-lg-4">
       <div class="col-md-6 col-lg-4">
-        <article class="card h-100 edzhome-wcard edzhome-wcard--featured">
+        <article class="card h-100 edzhome-wcard">
+           <span class="edzhome-wcard__num" aria-hidden="true">01</span>
           <span class="edzhome-icobox edzhome-icobox--lg edzhome-tint-1"><i class="bi bi-wallet2" aria-hidden="true"></i></span>
           <h3 class="edzhome-wcard__title">Affordable — No Per-Seat Shock</h3>
           <p class="edzhome-wcard__text">Flat-rate plans with unlimited user options. Stop paying per person.</p>
@@ -1098,6 +1099,93 @@
 </section>
 <!-- ====== FAQ end ====== -->
 
+<!-- ====== Contact / Enquiry start (paste BEFORE the <footer>, after </main> content) ====== -->
+<section class="edzhome-section edzhome-contact" id="contact" aria-labelledby="edzhomeContactTitle">
+  <div class="container">
+    <div class="row g-5 align-items-center">
+
+      <!-- Left: message -->
+      <div class="col-lg-5">
+        <span class="edzhome-badge"><i class="bi bi-envelope-fill" aria-hidden="true"></i>Get in touch</span>
+        <h2 class="edzhome-contact__title" id="edzhomeContactTitle">
+          Let’s Build Something That Moves Your <span class="edzhome-accent">Business Forward.</span>
+        </h2>
+        <span class="edzhome-contact__rule" aria-hidden="true"></span>
+        <p class="edzhome-contact__lead">Tell us a little about your business and goals. Our team will get back to you to discuss the right solution.</p>
+
+        <ul class="edzhome-contact__points list-unstyled">
+          <li><span class="edzhome-icobox edzhome-tint-1"><i class="bi bi-sliders" aria-hidden="true"></i></span><span>Tailored to your business</span></li>
+          <li><span class="edzhome-icobox edzhome-tint-1"><i class="bi bi-calendar-check" aria-hidden="true"></i></span><span>Clear next steps</span></li>
+          <li><span class="edzhome-icobox edzhome-tint-1"><i class="bi bi-lightning-charge" aria-hidden="true"></i></span><span>A response from our team</span></li>
+        </ul>
+      </div>
+
+      <!-- Right: form card -->
+      <div class="col-lg-7">
+        <div class="edzhome-contact__card">
+          <h3 class="edzhome-contact__formtitle">Send an Enquiry</h3>
+
+          <!-- PHP DEVELOPER: set action/method and add server-side validation + CSRF token.
+               "novalidate" switches off browser validation so the backend controls all messages. -->
+          <form class="edzhome-contact__form" action="#" method="post" novalidate>
+            <div class="row g-3 g-md-4">
+
+              <div class="col-md-6">
+                <label class="form-label" for="edzhomeName">Full Name <span class="edzhome-req" aria-hidden="true">*</span></label>
+                <div class="input-group edzhome-input">
+                  <span class="input-group-text"><i class="bi bi-person" aria-hidden="true"></i></span>
+                  <input class="form-control" type="text" id="edzhomeName" name="name" placeholder="Enter your name" autocomplete="name" aria-required="true">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="edzhomePhone">Phone Number <span class="edzhome-req" aria-hidden="true">*</span></label>
+                <div class="input-group edzhome-input">
+                  <span class="input-group-text"><i class="bi bi-telephone" aria-hidden="true"></i></span>
+                  <input class="form-control" type="tel" id="edzhomePhone" name="phone" placeholder="Enter your phone number" autocomplete="tel" inputmode="tel" aria-required="true">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="edzhomeBrand">Brand Name <span class="edzhome-req" aria-hidden="true">*</span></label>
+                <div class="input-group edzhome-input">
+                  <span class="input-group-text"><i class="bi bi-tag" aria-hidden="true"></i></span>
+                  <input class="form-control" type="text" id="edzhomeBrand" name="brand" placeholder="Enter your brand name" autocomplete="organization" aria-required="true">
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label" for="edzhomeEmail">Email Address <span class="edzhome-req" aria-hidden="true">*</span></label>
+                <div class="input-group edzhome-input">
+                  <span class="input-group-text"><i class="bi bi-envelope" aria-hidden="true"></i></span>
+                  <input class="form-control" type="email" id="edzhomeEmail" name="email" placeholder="Enter your email address" autocomplete="email" aria-required="true">
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label class="form-label" for="edzhomeMessage">Your Message <span class="edzhome-req" aria-hidden="true">*</span></label>
+                <div class="input-group edzhome-input edzhome-input--area">
+                  <span class="input-group-text"><i class="bi bi-chat-left-text" aria-hidden="true"></i></span>
+                  <textarea class="form-control" id="edzhomeMessage" name="message" rows="4" placeholder="Tell us about your requirements, goals, or any question…" aria-required="true"></textarea>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <button class="btn edzhome-btn edzhome-btn--dark edzhome-contact__submit" type="submit">
+                  Enquire Now <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                </button>
+                <p class="edzhome-contact__note"><i class="bi bi-lock-fill" aria-hidden="true"></i>Your details stay confidential. We’ll only contact you about your enquiry.</p>
+              </div>
+
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- ====== Contact / Enquiry end ====== -->
 </main>
 
 <!-- ====== Footer start (place after </main>) ====== -->

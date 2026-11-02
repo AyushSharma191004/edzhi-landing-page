@@ -459,7 +459,7 @@ body {
    ========================================================================== */
 
 /* ---------- Shared section helpers ---------- */
-.edzhome-section { padding-block: clamp(3rem, 2rem + 4vw, 5rem); }
+.edzhome-section { padding-block: clamp(3rem, 2rem + 4vw, 3rem); }
 .edzhome-eyebrow {
   display: block; margin-bottom: var(--edz-spacing-2);
   font-size: var(--edz-font-size-xs); font-weight: var(--edz-font-weight-bold);
@@ -754,9 +754,15 @@ body {
   transition: transform var(--edz-transition), box-shadow var(--edz-transition), border-color var(--edz-transition);
 }
 .edzhome-wcard:hover {
-  transform: translateY(-4px); border-color: rgba(var(--edz-color-primary-rgb), .9);
-  box-shadow: 0 20px 36px -22px rgba(var(--edz-color-dark-rgb), .35);
+  /* transform: translateY(-4px); border-color: rgba(var(--edz-color-primary-rgb), .9);
+  box-shadow: 0 20px 36px -22px rgba(var(--edz-color-dark-rgb), .35); */
+    --bs-card-bg: var(--edz-color-dark); --bs-card-border-color: var(--edz-color-dark);
+  background-image: radial-gradient(circle at 100% 0, rgba(var(--edz-color-primary-rgb), .25), transparent 55%);
 }
+.edzhome-wcard:hover { border-color: var(--edz-color-primary); }
+.edzhome-wcard:hover .edzhome-icobox { --edzhome-tint-bg: rgba(255, 255, 255, .1); --edzhome-tint-fg: var(--edz-color-primary); }
+.edzhome-wcard:hover .edzhome-wcard__title { color: var(--edz-text-on-dark); }
+.edzhome-wcard:hover .edzhome-wcard__text { color: var(--edz-text-on-dark-muted); }
 .edzhome-wcard .edzhome-icobox { align-self: flex-start; margin-bottom: 1.25rem; }
 .edzhome-wcard:hover .edzhome-icobox { transform: scale(1.06); }
 .edzhome-wcard__num {
@@ -769,14 +775,14 @@ body {
 .edzhome-wcard__text { margin: 0; font-size: var(--edz-font-size-sm); line-height: var(--edz-line-height-relaxed); color: var(--edz-text-muted); }
 
 /* Featured first card */
-.edzhome-wcard--featured {
+/* .edzhome-wcard--featured {
   --bs-card-bg: var(--edz-color-dark); --bs-card-border-color: var(--edz-color-dark);
   background-image: radial-gradient(circle at 100% 0, rgba(var(--edz-color-primary-rgb), .25), transparent 55%);
 }
 .edzhome-wcard--featured:hover { border-color: var(--edz-color-primary); }
 .edzhome-wcard--featured .edzhome-icobox { --edzhome-tint-bg: rgba(255, 255, 255, .1); --edzhome-tint-fg: var(--edz-color-primary); }
 .edzhome-wcard--featured .edzhome-wcard__title { color: var(--edz-text-on-dark); }
-.edzhome-wcard--featured .edzhome-wcard__text { color: var(--edz-text-on-dark-muted); }
+.edzhome-wcard--featured .edzhome-wcard__text { color: var(--edz-text-on-dark-muted); } */
 
 /* ==========================================================================
    2. INTEGRATIONS
@@ -1076,6 +1082,90 @@ body {
 .edzhome-faq .accordion-button:focus-visible { outline: 3px solid var(--edz-color-primary); outline-offset: -3px; }
 .edzhome-faq .accordion-body { padding: 0 1.25rem 1.25rem; font-size: var(--edz-font-size-sm); line-height: 1.7; color: var(--edz-text-muted); }
 
+
+/* ==========================================================================
+   EDZHI HOME – CONTACT / ENQUIRY   (append to edzhi.css)
+   Depends on: .edzhome-section, .edzhome-badge, .edzhome-accent, .edzhome-icobox,
+   .edzhome-tint-1, .edzhome-btn(+--dark) from the earlier sections.
+   ========================================================================== */
+
+.edzhome-contact {
+  position: relative; overflow: clip; background-color: var(--edz-bg-surface);
+  background-image:
+    radial-gradient(circle at 0 0, rgba(var(--edz-color-primary-rgb), .22), transparent 38%),
+    radial-gradient(circle at 100% 100%, rgba(var(--edz-color-primary-rgb), .2), transparent 40%);
+}
+
+/* ---------- Left column ---------- */
+.edzhome-contact .edzhome-badge { margin-bottom: var(--edz-spacing-5); }
+.edzhome-contact__title {
+  margin: 0; font-size: clamp(2rem, 1.4rem + 3vw, 3.2rem); font-weight: var(--edz-font-weight-bold);
+  line-height: 1.12; letter-spacing: var(--edz-letter-spacing-tight);
+}
+.edzhome-contact__title .edzhome-accent { display: block; }
+.edzhome-contact__rule { display: block; width: 4.5rem; height: 4px; margin: 1rem 0 1.2rem; border-radius: var(--edz-radius-full); background: var(--edz-color-primary); }
+.edzhome-contact__lead { max-width: 32rem; margin: 0 0 var(--edz-spacing-6); font-size: var(--edz-font-size-lg); line-height: var(--edz-line-height-relaxed); color: var(--edz-text-muted); }
+.edzhome-contact__points { display: grid; gap: 1rem; margin: 0; padding: 0; }
+.edzhome-contact__points li { display: flex; align-items: center; gap: 1rem; font-size: var(--edz-font-size-lg); font-weight: var(--edz-font-weight-semibold); }
+.edzhome-contact__points .edzhome-icobox { width: 3.25rem;  font-size: 1.35rem; box-shadow: 0 8px 18px -10px rgba(var(--edz-color-primary-rgb), .9); }
+
+/* ---------- Form card ---------- */
+.edzhome-contact__card {
+  position: relative; overflow: hidden; padding: clamp(1.5rem, 1rem + 2.5vw, 2.75rem);
+  background: var(--edz-bg-surface); border: var(--edz-border-width-thin) solid var(--edz-border-color-soft); border-radius: 1.75rem;
+  box-shadow: 0 30px 60px -34px rgba(var(--edz-color-dark-rgb), .35);
+}
+.edzhome-contact__card::before {            /* dark → yellow top strip */
+  content: ""; position: absolute; inset: 0 0 auto; height: .5rem;
+  background: linear-gradient(90deg, var(--edz-color-dark) 0 62%, var(--edz-color-primary) 62% 100%);
+}
+.edzhome-contact__formtitle {
+  display: flex; align-items: center; gap: .85rem; margin: .5rem 0 1.5rem;
+  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.125rem); font-weight: var(--edz-font-weight-extrabold); letter-spacing: var(--edz-letter-spacing-tight);
+}
+.edzhome-contact__formtitle::before { content: ""; flex: none; width: .4rem; height: 1.9rem; border-radius: var(--edz-radius-full); background: var(--edz-color-primary); }
+
+.edzhome-contact .form-label { margin-bottom: .45rem; font-size: .9375rem; font-weight: var(--edz-font-weight-semibold); }
+.edzhome-req { margin-left: .15rem; color: #e5484d; }
+
+/* Fields: Bootstrap input-group restyled as one rounded box */
+.edzhome-input {
+  flex-wrap: nowrap; overflow: hidden; background: var(--edz-bg-white);
+  border: var(--edz-border-width-thin) solid var(--edz-border-color-soft); border-radius: .875rem;
+  transition: border-color var(--edz-transition), box-shadow var(--edz-transition);
+}
+.edzhome-input:hover { border-color: rgba(var(--edz-color-dark-rgb), .35); }
+.edzhome-input:focus-within { border-color: var(--edz-color-primary); box-shadow: 0 0 0 .22rem rgba(var(--edz-color-primary-rgb), .35); }
+.edzhome-input .input-group-text { padding: 0 .35rem 0 1rem; border: 0; background: transparent; color: var(--edz-color-dark); font-size: 1.1rem; }
+.edzhome-input .form-control {
+  padding: .85rem 1rem .85rem .5rem; border: 0; background: transparent; box-shadow: none;
+  font-size: var(--edz-font-size-sm); color: var(--edz-color-dark);
+}
+.edzhome-input .form-control::placeholder { color: var(--edz-text-muted); opacity: .8; }
+.edzhome-input--area { align-items: flex-start; }
+.edzhome-input--area .input-group-text { padding-top: .95rem; }
+.edzhome-input--area textarea.form-control { min-height: 9rem; resize: vertical; }
+
+/* Submit button: dark with a hard yellow bottom edge */
+.edzhome-contact__submit {
+  width: 100%; padding: 1rem 1.5rem; border-radius: 1rem; background: var(--edz-color-dark); color: var(--edz-text-on-dark);
+  font-size: var(--edz-font-size-lg); box-shadow: 0 5px 0 var(--edz-color-primary), 0 16px 24px -14px rgba(var(--edz-color-dark-rgb), .6);
+}
+.edzhome-contact__submit .bi { color: var(--edz-color-primary); font-size: 1.25em; }
+.edzhome-contact__submit:hover { background: var(--edz-color-dark-hover); color: var(--edz-text-on-dark); transform: translateY(-2px); box-shadow: 0 7px 0 var(--edz-color-primary), 0 20px 28px -14px rgba(var(--edz-color-dark-rgb), .6); }
+.edzhome-contact__submit:hover .bi { transform: translateX(4px); }
+.edzhome-contact__submit:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--edz-color-primary); }
+
+.edzhome-contact__note { display: flex; align-items: center; justify-content: center; gap: .5rem; margin: 1.1rem 0 0; font-size: .8125rem; text-align: center; color: var(--edz-text-muted); }
+.edzhome-contact__note .bi { flex: none; color: var(--edz-color-primary-hover); font-size: 1rem; }
+
+@media (max-width: 575.98px) {
+  .edzhome-contact__points li { font-size: var(--edz-font-size-base); }
+  .edzhome-contact__note { align-items: flex-start; text-align: left; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .edzhome-input, .edzhome-contact__submit, .edzhome-contact__submit .bi { transition: none; }
+}
 /* ==========================================================================
    3. FOOTER
    ========================================================================== */
