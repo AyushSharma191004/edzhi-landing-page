@@ -916,6 +916,65 @@ body {
   .edzhome-plan:hover, .edzhome-plan:focus-within { transform: none; }
 }
 
+/* ==========================================================================
+   EDZHI HOME – COMPARE PLANS TABLE   (append to edzhi.css)
+   Depends on: .edzhome-section, .edzhome-head*, .edzhome-badge
+   ========================================================================== */
+
+.edzhome-pcmpsec { background: var(--edz-bg-body); }
+
+/* Horizontal scroll only (no vertical scroll trap) */
+.edzhome-pcmp { overflow-x: auto; overflow-y: hidden; overscroll-behavior-x: contain; }
+.edzhome-pcmp:focus-visible { outline: 3px solid var(--edz-color-primary); outline-offset: 2px; }
+
+.edzhome-pcmp__table {
+  width: 100%; min-width: 44rem; table-layout: fixed;
+  border-collapse: separate; border-spacing: 0 .35rem;      /* gap between the rounded rows */
+  font-size: .8125rem; color: var(--edz-color-dark);
+}
+@media (min-width: 768px) { .edzhome-pcmp__table { font-size: var(--edz-font-size-sm); } }
+.edzhome-pcmp__table th:first-child { width: 36%; }
+
+/* Plan header pills */
+.edzhome-pcmp__table thead th { padding: 0 .35rem .35rem; font-weight: inherit; }
+.edzhome-pcmp__plan {
+  display: block; padding: .7rem .5rem; border-radius: .875rem; text-align: center;
+  background: var(--edz-bg-soft); color: var(--edz-color-dark);
+}
+.edzhome-pcmp__plan strong { display: block; font-size: var(--edz-font-size-base); font-weight: var(--edz-font-weight-extrabold); line-height: 1.25; }
+.edzhome-pcmp__plan small { display: block; font-size: .75rem; font-weight: var(--edz-font-weight-bold); line-height: 1.3; }
+.edzhome-pcmp__plan--growth { background: var(--edz-color-primary); }
+.edzhome-pcmp__plan--pro { background: var(--edz-color-dark); color: var(--edz-text-on-dark); }
+.edzhome-pcmp__plan--pro strong { color: var(--edz-color-primary); }
+
+/* Rows: odd rows shaded, rounded ends, soft hover */
+.edzhome-pcmp__table tbody tr { --edzhome-r: var(--edz-bg-body); --edzhome-rh: #FFF3D1; }
+.edzhome-pcmp__table tbody tr:nth-child(odd) { --edzhome-r: #FFEFB8; --edzhome-rh: #FFE8A0; }
+.edzhome-pcmp__table tbody th,
+.edzhome-pcmp__table tbody td {
+  padding: .6rem .75rem; text-align: center; vertical-align: middle; background: var(--edzhome-r);
+  transition: background-color var(--edz-transition);
+}
+.edzhome-pcmp__table tbody tr:hover > * { background: var(--edzhome-rh); }
+.edzhome-pcmp__table tbody > tr > :first-child { border-radius: .75rem 0 0 .75rem; }
+.edzhome-pcmp__table tbody > tr > :last-child { border-radius: 0 .75rem .75rem 0; }
+
+/* Feature column: pinned while scrolling */
+.edzhome-pcmp__table tbody th { position: sticky; left: 0; z-index: 1; padding-left: 1rem; text-align: left; font-weight: var(--edz-font-weight-bold); }
+.edzhome-pcmp__table tbody td strong { font-weight: var(--edz-font-weight-bold); }
+@media (max-width: 767.98px) { .edzhome-pcmp__table tbody th { box-shadow: 6px 0 8px -6px rgba(var(--edz-color-dark-rgb), .22); } }
+
+/* Included / not included */
+.edzhome-pcmp__yes {
+  display: inline-grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: var(--edz-radius-circle);
+  background: var(--edz-color-primary); color: var(--edz-color-dark); font-size: .95rem; line-height: 1;
+}
+.edzhome-pcmp__no { color: #8a8576; font-size: 1.25rem; line-height: 1; }
+
+.edzhome-pcmp__note { margin: var(--edz-spacing-4) 0 0; font-size: var(--edz-font-size-sm); color: var(--edz-text-muted); }
+
+@media (prefers-reduced-motion: reduce) { .edzhome-pcmp__table tbody th, .edzhome-pcmp__table tbody td { transition: none; } }
+
 
 /* ==========================================================================
    EDZHI HOME – COMPARISON TABLE   (append to the shared style.css)
