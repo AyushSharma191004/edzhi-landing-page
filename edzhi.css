@@ -144,6 +144,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+}
 
 /* ==========================================================================
    EDZHI HOME – NAVBAR + HERO   (append to the shared style.css)
@@ -1328,3 +1333,8 @@ body {
 @media (prefers-reduced-motion: reduce) {
   .edzhome-rv { opacity: 1; translate: none; transition: none; }
 }
+
+
+
+
+
