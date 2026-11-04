@@ -856,7 +856,7 @@ html, body {
 
 /* Feature list grows to fill, so the Trial button always sits at the card bottom */
 .edzhome-plan__list { flex: 1 1 auto; margin: 0 0 1.5rem; padding: 1.1rem 0 0; list-style: none; border-top: var(--edz-border-width-thin) solid var(--edz-border-color-soft); }
-.edzhome-plan__list li { display: flex; align-items: flex-start; gap: .65rem; margin-bottom: .7rem; font-size: .9375rem; line-height: 1.35; }
+.edzhome-plan__list li { display: flex; align-items: flex-start; gap: .65rem; margin-bottom: 1.7rem; font-size: .9375rem; line-height: 1.35; }
 .edzhome-check {
   display: grid; place-items: center; flex: none; width: 1.25rem; height: 1.25rem; margin-top: .05rem;
   border-radius: var(--edz-radius-circle); background: var(--edzhome-check-bg); color: var(--edzhome-check-fg); font-size: .8rem;
