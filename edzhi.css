@@ -1338,3 +1338,76 @@ html, body {
 
 
 
+
+/* ==========================================================================
+   EDZHI – PRIVACY POLICY PAGE   (append to edzhi.css)   prefix: edzprivacy-
+   ========================================================================== */
+.edzprivacy-page { padding: calc(4.75rem + 2.5rem) 0 clamp(3rem, 2rem + 4vw, 5rem); background: var(--edz-bg-body); }   /* top padding clears the fixed navbar */
+.edzprivacy-wrap { max-width: 68rem; margin-inline: auto; }
+.edzprivacy-title {
+  margin: 0 0 .5rem; text-align: center; font-size: clamp(1.75rem, 1.3rem + 2vw, 2.5rem);
+  font-weight: var(--edz-font-weight-extrabold); line-height: 1.2; letter-spacing: var(--edz-letter-spacing-tight);
+}
+.edzprivacy-accent {
+  background: linear-gradient(90deg, var(--edz-color-primary-hover), var(--edz-text-eyebrow));
+  -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent;
+}
+.edzprivacy-updated { margin: 0 0 2rem; text-align: center; font-size: var(--edz-font-size-sm); color: var(--edz-text-muted); }
+
+.edzprivacy-list { margin: 0; padding-left: 1.5rem; font-size: var(--edz-font-size-base); line-height: 1.8; color: var(--edz-color-dark-hover); overflow-wrap: anywhere;list-style-position: outside;  }
+/* .edzprivacy-list li { padding-left: .35rem; } */
+/* .edzprivacy-list li + li { margin-top: .9rem; } */
+ul.edzprivacy-list li {
+  margin-bottom: 4px;
+  list-style-position: inside !important;
+  padding-left: 10px;
+}
+
+ul.edzprivacy-list li {
+  padding-left: 0;
+}
+.edzprivacy-list li:not(.edzprivacy-head) {
+  list-style-position: outside !important;
+  margin-left: 25px !important;
+  padding-left: 0px !important;
+}
+.edzprivacy-list li::marker { color: var(--edz-color-primary-hover); font-size: 1.15em; }   /* yellow bullets */
+.edzprivacy-list strong { font-weight: var(--edz-font-weight-bold); color: var(--edz-color-dark); }
+.edzprivacy-list .edzprivacy-head { margin-top: 1.75rem; font-size: 1.0625rem;list-style-type: none; padding-left: 0;}
+.edzprivacy-list .edzprivacy-head:first-child { margin-top: 0; }
+
+@media (max-width: 575.98px) {
+  .edzprivacy-list { padding-left: 1.15rem; font-size: .9375rem; }
+}
+
+/* ==========================================================================
+   EDZHI – REFUND & CANCELLATION POLICY PAGE   (append to edzhi.css)   prefix: edzrefund-
+   ========================================================================== */
+.edzrefund-page { padding: calc(4.75rem + 2.5rem) 0 clamp(3rem, 2rem + 4vw, 5rem); background: var(--edz-bg-body); }   /* top padding clears the fixed navbar */
+.edzrefund-wrap { max-width: 68rem; margin-inline: auto; }
+.edzrefund-title {
+  margin: 0 0 .5rem; text-align: center; font-size: clamp(1.75rem, 1.3rem + 2vw, 2.5rem);
+  font-weight: var(--edz-font-weight-extrabold); line-height: 1.2; letter-spacing: var(--edz-letter-spacing-tight);
+}
+.edzrefund-accent {
+  background: linear-gradient(90deg, var(--edz-color-primary-hover), var(--edz-text-eyebrow));
+  -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent;
+}
+.edzrefund-updated { margin: 0 0 1.5rem; text-align: center; font-size: var(--edz-font-size-sm); color: var(--edz-text-muted); }
+.edzrefund-intro { margin: 0 0 1.75rem; font-size: var(--edz-font-size-base); line-height: 1.8; color: var(--edz-color-dark-hover); }
+
+.edzrefund-list { margin: 0; padding-left: 1.5rem; font-size: var(--edz-font-size-base); line-height: 1.8; color: var(--edz-color-dark-hover); overflow-wrap: anywhere; }
+/* .edzrefund-list li { padding-left: .35rem; }
+.edzrefund-list li + li { margin-top: .9rem; } */
+.edzrefund-list li::marker { color: var(--edz-color-primary-hover); font-size: 1.15em; }   /* yellow bullets */
+.edzrefund-list strong { font-weight: var(--edz-font-weight-bold); color: var(--edz-color-dark); }
+.edzrefund-list .edzrefund-head { margin-top: 1.75rem; font-size: 1.0625rem;list-style-type: none; padding-left: 0; }
+.edzrefund-list .edzrefund-head:first-child { margin-top: 0; }
+.edzrefund-list li:not(.edzrefund-head) {
+  list-style-position: outside !important;
+  margin-left: 25px !important;
+  padding-left: 0px !important;
+}
+@media (max-width: 575.98px) {
+  .edzrefund-list { padding-left: 1.15rem; font-size: .9375rem; }
+}
